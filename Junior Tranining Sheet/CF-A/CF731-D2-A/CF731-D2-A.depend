@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1509877539 source:d:\programming\codeforces\junior tranining sheet\cf-a\cf731-d2-a\main.cpp
+	<iostream>
+	<cmath>
+	<algorithm>
+
