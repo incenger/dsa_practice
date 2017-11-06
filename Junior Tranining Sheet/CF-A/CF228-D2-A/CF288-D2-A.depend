@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1509891402 source:d:\programming\codeforces\junior tranining sheet\cf-a\cf288-d2-a\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
