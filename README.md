@@ -1,2 +1,2 @@
 # Codeforces
-This is an repository for Codeforces problems
+Codeforces problems practice and solution
