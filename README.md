@@ -1,2 +1,2 @@
-# Codeforces
-Codeforces problems practice and solution
+# Competitive Programming
+Online judges problems
