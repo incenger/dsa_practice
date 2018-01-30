@@ -11,7 +11,7 @@ EXE = main
 HDRS = 
 
 # space-separated list of source files
-SRCS = 716B.cpp 
+SRCS = UVA-1555.cpp 
 
 # automatically generated list of object files
 OBJS = $(SRCS:.cpp=.o)
