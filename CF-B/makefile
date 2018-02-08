@@ -11,7 +11,7 @@ EXE = main
 HDRS = 
 
 # space-separated list of source files
-SRCS = 716B.cpp 
+SRCS = 550B.cpp 
 
 # automatically generated list of object files
 OBJS = $(SRCS:.cpp=.o)
