@@ -1,0 +1,386 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/66b4867/
+$(EXE)	CF-B/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
+$(EXE)	UVA/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
+$(OBJS)	CF-B/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
+$(OBJS)	UVA/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
+A	UVA/UVA-378.cpp	/^    double A;$/;"	m	struct:line	typeref:typename:double	file:
+B	UVA/UVA-378.cpp	/^    double B;$/;"	m	struct:line	typeref:typename:double	file:
+C	UVA/UVA-378.cpp	/^    double C;$/;"	m	struct:line	typeref:typename:double	file:
+CC	CF-B/makefile	/^CC = g++$/;"	m
+CC	UVA/makefile	/^CC = g++$/;"	m
+EXE	CF-B/makefile	/^EXE = main$/;"	m
+EXE	UVA/makefile	/^EXE = main$/;"	m
+HDRS	CF-B/makefile	/^HDRS = $/;"	m
+HDRS	UVA/makefile	/^HDRS = $/;"	m
+MAX	CF-B/152B.cpp	/^#define MAX /;"	d	file:
+MAX	CF-B/230B.cpp	/^const long long MAX = 1000000000000;$/;"	v	typeref:typename:const long long
+MAX	CF-B/236B.cpp	/^#define MAX /;"	d	file:
+MAX	CF-B/363B.cpp	/^#define MAX /;"	d	file:
+MAX	CF-B/439B.cpp	/^#define MAX /;"	d	file:
+MAX	CF-B/492B.cpp	/^#define MAX /;"	d	file:
+MAX	CF-B/810B.cpp	/^#define MAX /;"	d	file:
+MOD	CF-B/236B.cpp	/^#define MOD /;"	d	file:
+MOD	CF-B/584B.cpp	/^const unsigned long long MOD = 1000000007;$/;"	v	typeref:typename:const unsigned long long
+OBJS	CF-B/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	UVA/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
+SRCS	CF-B/makefile	/^SRCS = 550B.cpp $/;"	m
+SRCS	UVA/makefile	/^SRCS = UVA-1555.cpp $/;"	m
+XY	UVA/UVA-10106.cpp	/^const int XY = 62500;$/;"	v	typeref:typename:const int
+a	CF-B/445B.cpp	/^vector<int> a[51];$/;"	v	typeref:typename:vector<int>[51]
+a	CF-B/492B.cpp	/^vector<int> a;$/;"	v	typeref:typename:vector<int>
+a	CF-B/791B.cpp	/^vector<int> a[150001];$/;"	v	typeref:typename:vector<int>[150001]
+a	SPOJ/TOE1.cpp	/^char a[3][3];$/;"	v	typeref:typename:char[3][3]
+a	SPOJ/TOE2.cpp	/^char a[3][3];$/;"	v	typeref:typename:char[3][3]
+a	UVA/UVA-10452.cpp	/^string a[10];$/;"	v	typeref:typename:string[10]
+a	UVA/UVA-11953.cpp	/^char a[100][100];$/;"	v	typeref:typename:char[100][100]
+a	UVA/UVA-352.cpp	/^char a[25][25];$/;"	v	typeref:typename:char[25][25]
+a	UVA/UVA-369.cpp	/^long long a[10000][10000];$/;"	v	typeref:typename:long long[10000][10000]
+allowed	CF-C/242C.cpp	/^set<pair<int, int> > allowed;$/;"	v	typeref:typename:set<pair<int,int>>
+automaton	CF-B/448B.cpp	/^bool automaton(string s, string t) {$/;"	f	typeref:typename:bool
+b	UVA/UVA-10077.cpp	/^    int b;$/;"	m	struct:frac	typeref:typename:int	file:
+bigMod	UVA/UVA-374.cpp	/^int bigMod(unsigned int a,unsigned int b,unsigned int c) {$/;"	f	typeref:typename:int
+binarySearch	UVA/UVA-10077.cpp	/^void binarySearch(frac q) {$/;"	f	typeref:typename:void
+black	CF-C/225C.cpp	/^int black[1001] = {0};$/;"	v	typeref:typename:int[1001]
+c	CF-C/225C.cpp	/^char c[1001][1001];$/;"	v	typeref:typename:char[1001][1001]
+c	UVA/UVA-11094.cpp	/^char c[20][20];$/;"	v	typeref:typename:char[20][20]
+cal	CF-A/69A.cpp	/^int cal(int a[], int sz) {$/;"	f	typeref:typename:int
+cal	CF-B/287B.cpp	/^long long cal(long long x, long long k) {$/;"	f	typeref:typename:long long
+cal	CF-B/476B.cpp	/^int cal(int n, int k) {$/;"	f	typeref:typename:int
+cal	UVA/UVA-369.cpp	/^long long cal(int n, int m) {$/;"	f	typeref:typename:long long
+cal	UVA/UVA-713.cpp	/^void cal(string s, string t) {$/;"	f	typeref:typename:void
+calc	UVA/UVA-1555.cpp	/^double calc(int n, double a, double b) {$/;"	f	typeref:typename:double
+calcB	CF-C/225C.cpp	/^int calcB(int j, int d) {$/;"	f	typeref:typename:int
+calcHeight	SPOJ/CDOWN.cpp	/^int calcHeight(string name) {$/;"	f	typeref:typename:int
+calcW	CF-C/225C.cpp	/^int calcW(int j, int d) {$/;"	f	typeref:typename:int
+cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<pair<int,int>,int>
+clean	CF-B/makefile	/^clean: $/;"	t
+clean	UVA/makefile	/^clean: $/;"	t
+cmp	SPOJ/PALIN.cpp	/^int cmp() {$/;"	f	typeref:typename:int
+code	SPOJ/ABSYS.cpp	/^const string code = "machula";$/;"	v	typeref:typename:const string
+copy	SPOJ/PALIN.cpp	/^void copy() {$/;"	f	typeref:typename:void
+count	CF-B/216B.cpp	/^int n, m, count;$/;"	v	typeref:typename:int
+countD	SPOJ/CDOWN.cpp	/^int countD(string origin, string name, int h) {$/;"	f	typeref:typename:int
+countWE	UVA/UVA-352.cpp	/^int countWE(int i, int j) {$/;"	f	typeref:typename:int
+cut	CF-A/358A.c	/^int cut (int a, int b, int c, int d)$/;"	f	typeref:typename:int
+cycle	CF-B/216B.cpp	/^bool cycle;$/;"	v	typeref:typename:bool
+d	SPOJ/CDOWN.cpp	/^int t, n, d;$/;"	v	typeref:typename:int
+d	UVA/UVA-10452.cpp	/^int n, m, d[10];$/;"	v	typeref:typename:int[10]
+dfs	CF-B/216B.cpp	/^void dfs(int u, int v) {$/;"	f	typeref:typename:void
+dfs	CF-B/445B.cpp	/^void dfs(int p) {$/;"	f	typeref:typename:void
+dfs	CF-B/505B.cpp	/^void dfs(int a, int b, int c) {$/;"	f	typeref:typename:void
+dfs	CF-B/791B.cpp	/^void dfs(int v) {$/;"	f	typeref:typename:void
+dfs	UVA/UVA-10452.cpp	/^void dfs(int i, int j, int k) {$/;"	f	typeref:typename:void
+dfs	UVA/UVA-11094.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
+dfs	UVA/UVA-11953.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
+digit	CF-B/102B.cpp	/^string  digit(string s) {$/;"	f	typeref:typename:string
+direction	CF-B/152B.cpp	/^vector<pair<int, int>> direction;$/;"	v	typeref:typename:vector<pair<int,int>>
+dp	CF-C/225C.cpp	/^int dp[2][1001];$/;"	v	typeref:typename:int[2][1001]
+edge	CF-B/791B.cpp	/^long long edge, vertex;$/;"	v	typeref:typename:long long
+encode	CF-B/746B.cpp	/^string encode (string s) {$/;"	f	typeref:typename:string
+f	CF-B/79B.cpp	/^char f[4][1000] = {"Grapes", "Carrots", "Kiwis", "Waste"};$/;"	v	typeref:typename:char[4][1000]
+frac	UVA/UVA-10077.cpp	/^struct frac {$/;"	s	file:
+gcd	CF-A/9A.cpp	/^int gcd(int m, int n) {$/;"	f	typeref:typename:int
+gcd	SPOJ/POUR1.cpp	/^int gcd(int a, int b)$/;"	f	typeref:typename:int
+gcd	UVA/UVA-408.cpp	/^int gcd(int x, int y) {$/;"	f	typeref:typename:int
+gcd	UVA/UVA-412.cpp	/^int gcd(int a, int b) {$/;"	f	typeref:typename:int
+gen	CF-B/216B.cpp	/^void gen() {$/;"	f	typeref:typename:void
+init	SPOJ/CDOWN.cpp	/^void init() {$/;"	f	typeref:typename:void
+inside	CF-A/358A.c	/^int inside(int a, int b, int c)$/;"	f	typeref:typename:int
+isDecreasing	CF-B/451B.cpp	/^bool isDecreasing (long long a[], int i1, int i2) {$/;"	f	typeref:typename:bool
+isFull	SPOJ/TOE2.cpp	/^bool isFull()$/;"	f	typeref:typename:bool
+isIncreasing	CF-B/451B.cpp	/^bool isIncreasing (long long a[], int i1, int i2) {$/;"	f	typeref:typename:bool
+isKGood	CF-A/365A.cpp	/^bool isKGood(string s, int k) {$/;"	f	typeref:typename:bool
+isPrime	CF-A/80A.cpp	/^bool isPrime(int n) {$/;"	f	typeref:typename:bool
+isVowel	CF-A/118A.cpp	/^bool isVowel(char c) {$/;"	f	typeref:typename:bool
+l	CF-B/492B.cpp	/^int n, l;$/;"	v	typeref:typename:int
+land	UVA/UVA-11094.cpp	/^char land;$/;"	v	typeref:typename:char
+line	UVA/UVA-378.cpp	/^struct line {$/;"	s	file:
+lucky	CF-A/488A.c	/^int lucky(int n)$/;"	f	typeref:typename:int
+luckydigits	CF-A/262A.c	/^int luckydigits(int n)$/;"	f	typeref:typename:int
+m	CF-B/152B.cpp	/^int n, m, xc, yc;$/;"	v	typeref:typename:int
+m	CF-B/216B.cpp	/^int n, m, count;$/;"	v	typeref:typename:int
+m	CF-C/225C.cpp	/^int n, m, x, y;$/;"	v	typeref:typename:int
+m	UVA/UVA-10452.cpp	/^int n, m, d[10];$/;"	v	typeref:typename:int
+m	UVA/UVA-11094.cpp	/^int n, m;$/;"	v	typeref:typename:int
+main	CF-A/108A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/118A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/122A.c	/^int main (void)$/;"	f	typeref:typename:int
+main	CF-A/127A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/136A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/143A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/144A.c	/^int main (void)$/;"	f	typeref:typename:int
+main	CF-A/152A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/158A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/160A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/189A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/194A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/208A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/218A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/225A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/228A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/230A.c	/^int main (void)$/;"	f	typeref:typename:int
+main	CF-A/236A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/255A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/257A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/262A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/263A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/265A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/266A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/268A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/270A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/279A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/282A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/284A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/287A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/289A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/294A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/296A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/298A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/300A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/313A.c	/^int main(void)$/;"	f	typeref:typename:int
+main	CF-A/318A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/31A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/339A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/353A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/355A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/358A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/359A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/365A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/370A.c	/^int main(void) { $/;"	f	typeref:typename:int
+main	CF-A/373A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/376A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/378A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/381A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/382A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/385A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/404A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/405A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/408A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/41A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/427A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/431A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/432A.C	/^int main(void)$/;"	f	typeref:typename:int
+main	CF-A/437A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/43A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/441A.c	/^int main(void)$/;"	f	typeref:typename:int
+main	CF-A/443A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/445A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/456A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/469A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/474A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/478B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/479A.c	/^int main(void)$/;"	f	typeref:typename:int
+main	CF-A/483A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/486A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/488A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/490A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/499A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/510A.c	/^int main (void)$/;"	f	typeref:typename:int
+main	CF-A/514A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/520A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/556A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/567A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/56A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/579A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/584A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/58A.c	/^int main(void)$/;"	f	typeref:typename:int
+main	CF-A/667A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/682A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/686A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/699A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/69A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/707A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/709A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/71A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/731A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/732A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/734A.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/742A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/75A.c	/^int main(void) {$/;"	f	typeref:typename:int
+main	CF-A/766A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/767A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/768A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/770A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/785A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/791A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/799A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/807A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/80A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/907A.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-A/9A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-B/102B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/129B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/141B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/144B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/148B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/152B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/16B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/186B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/215B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/216B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/227B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/230B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/236B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/253B.cpp	/^int main () {$/;"	f	typeref:typename:int
+main	CF-B/262B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/26B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/287B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/339B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/352B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/363B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/369B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/376B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/385B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/400B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/439B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/445B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/448B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/451B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/469B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/476B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/47B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/492B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/505B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/514B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/520B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/544B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/550B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/584B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/617B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/66B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/680B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/688B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/6B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/714B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/716B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/746B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/766B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/78B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/791B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/796B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/79B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/810B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/88B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/225C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/242C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/545C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/550C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/699C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	LTTCoder/DOIGIAY.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	SPOJ/ABSYS.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	SPOJ/AGGRCOW.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	SPOJ/CDOWN.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	SPOJ/PALIN.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	SPOJ/POUR1.cpp	/^int main() $/;"	f	typeref:typename:int
+main	SPOJ/STAMPS.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	SPOJ/TOE1.cpp	/^int main() $/;"	f	typeref:typename:int
+main	SPOJ/TOE2.cpp	/^int main() $/;"	f	typeref:typename:int
+main	UVA/UVA-10077.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-10106.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-10110.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-10368.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-10452.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-10865.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-11094.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-11231.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-11953.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-1555.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-352.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-369.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-374.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-378.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-408.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-412.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-439.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	UVA/UVA-713.cpp	/^int main() {$/;"	f	typeref:typename:int
+marked	CF-B/216B.cpp	/^bool marked[101];$/;"	v	typeref:typename:bool[101]
+maxElement	CF-A/768A.cpp	/^int maxElement(int a[], int sz) {$/;"	f	typeref:typename:int
+maxElement	CF-B/451B.cpp	/^long long maxElement(long long a[], int i1, int i2) {$/;"	f	typeref:typename:long long
+maybe	CF-A/807A.cpp	/^bool maybe(int a[], int sz) {$/;"	f	typeref:typename:bool
+minElement	CF-A/768A.cpp	/^int minElement(int a[], int sz) {$/;"	f	typeref:typename:int
+minElement	CF-B/451B.cpp	/^long long minElement(long long a[], int i1, int i2) {$/;"	f	typeref:typename:long long
+move	CF-B/152B.cpp	/^long long move(int i) {$/;"	f	typeref:typename:long long
+moveX	CF-C/242C.cpp	/^int moveX[] = {0, -1 , -1, -1, 0, 1, 1, 1};$/;"	v	typeref:typename:int[]
+moveX	UVA/UVA-439.cpp	/^int moveX[8] = {-1, -2, -2, -1, 1, 2, 2, 1};$/;"	v	typeref:typename:int[8]
+moveY	CF-C/242C.cpp	/^int moveY[] = {1, 1, 0, -1, -1, -1, 0, 1};$/;"	v	typeref:typename:int[]
+moveY	UVA/UVA-439.cpp	/^int moveY[8] = {2, 1, -1, -2, -2, -1, 1, 2};$/;"	v	typeref:typename:int[8]
+n	CF-B/152B.cpp	/^int n, m, xc, yc;$/;"	v	typeref:typename:int
+n	CF-B/216B.cpp	/^int n, m, count;$/;"	v	typeref:typename:int
+n	CF-B/492B.cpp	/^int n, l;$/;"	v	typeref:typename:int
+n	CF-C/225C.cpp	/^int n, m, x, y;$/;"	v	typeref:typename:int
+n	SPOJ/CDOWN.cpp	/^int t, n, d;$/;"	v	typeref:typename:int
+n	UVA/UVA-10452.cpp	/^int n, m, d[10];$/;"	v	typeref:typename:int
+n	UVA/UVA-11094.cpp	/^int n, m;$/;"	v	typeref:typename:int
+n	UVA/UVA-11953.cpp	/^int n;$/;"	v	typeref:typename:int
+n	UVA/UVA-352.cpp	/^int n;$/;"	v	typeref:typename:int
+nextPrime	CF-A/80A.cpp	/^int nextPrime(int n) {$/;"	f	typeref:typename:int
+num	SPOJ/PALIN.cpp	/^string num;$/;"	v	typeref:typename:string
+onlynine	SPOJ/PALIN.cpp	/^bool onlynine(string s) {$/;"	f	typeref:typename:bool
+oo	CF-B/550B.cpp	/^#define oo /;"	d	file:
+oo	CF-C/225C.cpp	/^#define oo /;"	d	file:
+outside	CF-A/358A.c	/^int outside(int a, int b, int c)$/;"	f	typeref:typename:int
+p	SPOJ/CDOWN.cpp	/^map<string, int> p;$/;"	v	typeref:typename:map<string,int>
+panli	CF-A/108A.c	/^int panli(int a, int b)$/;"	f	typeref:typename:int
+panli	SPOJ/PALIN.cpp	/^void panli() {$/;"	f	typeref:typename:void
+parseInt	SPOJ/ABSYS.cpp	/^int parseInt(string s) {$/;"	f	typeref:typename:int
+path	CF-B/445B.cpp	/^int path;$/;"	v	typeref:typename:int
+path	CF-B/505B.cpp	/^int path;$/;"	v	typeref:typename:int
+path	UVA/UVA-10077.cpp	/^string path = "";$/;"	v	typeref:typename:string
+phi	CF-A/284A.c	/^int  phi(int n)$/;"	f	typeref:typename:int
+powMOD	CF-B/584B.cpp	/^long long powMOD(long long a, long long b) {$/;"	f	typeref:typename:long long
+prime	CF-A/284A.c	/^int prime(int n)$/;"	f	typeref:typename:int
+rated	CF-A/807A.cpp	/^bool rated(int a[], int b[], int sz) {$/;"	f	typeref:typename:bool
+rem	CF-B/216B.cpp	/^int rem = 0;$/;"	v	typeref:typename:int
+removezeros	CF-A/75A.c	/^int removezeros(int n)$/;"	f	typeref:typename:int
+res	CF-B/445B.cpp	/^long long res = 1;$/;"	v	typeref:typename:long long
+rever	CF-A/41A.cpp	/^bool rever(string s, string t) {$/;"	f	typeref:typename:bool
+s1	CF-A/474A.cpp	/^string s1 = "qwertyuiop";$/;"	v	typeref:typename:string
+s2	CF-A/474A.cpp	/^string s2 = "asdfghjkl;";$/;"	v	typeref:typename:string
+s3	CF-A/474A.cpp	/^string s3 = "zxcvbnm,.\/";$/;"	v	typeref:typename:string
+shift	CF-A/474A.cpp	/^char shift(char c, char di) {$/;"	f	typeref:typename:char
+sol	CF-A/71A.cpp	/^void sol(string s) {$/;"	f	typeref:typename:void
+sol	CF-B/492B.cpp	/^double sol() {$/;"	f	typeref:typename:double
+sol	CF-C/242C.cpp	/^int sol() {$/;"	f	typeref:typename:int
+sol	SPOJ/AGGRCOW.cpp	/^int sol(vector<long long> &a, int n, int c) {$/;"	f	typeref:typename:int
+sol	SPOJ/PALIN.cpp	/^void sol() {$/;"	f	typeref:typename:void
+sol	SPOJ/POUR1.cpp	/^int sol(int a, int b, int c)$/;"	f	typeref:typename:int
+sol	UVA/UVA-439.cpp	/^int sol(int a, int b, int finalA, int finalB) {$/;"	f	typeref:typename:int
+sol_nine	SPOJ/PALIN.cpp	/^void sol_nine() {$/;"	f	typeref:typename:void
+sortbyfirst	SPOJ/CDOWN.cpp	/^bool sortbyfirst(const pair<int,string> &a,$/;"	f	typeref:typename:bool
+sortbysec	SPOJ/CDOWN.cpp	/^bool sortbysec(const pair<int,string> &a,$/;"	f	typeref:typename:bool
+square	CF-B/141B.cpp	/^int square(int x, int y, int a) {$/;"	f	typeref:typename:int
+start	CF-C/242C.cpp	/^pair<int, int> start, final;$/;"	v	typeref:typename:pair<int,int>
+step	CF-A/731A.cpp	/^int step(char a, char b) {$/;"	f	typeref:typename:int
+step	UVA/UVA-10452.cpp	/^char step[9] = "@IEHOVA#";$/;"	v	typeref:typename:char[9]
+swap	CF-A/144A.c	/^void swap(int *x, int *y)$/;"	f	typeref:typename:void
+swap	CF-A/230A.c	/^void swap(int *a, int *b)$/;"	f	typeref:typename:void
+t	SPOJ/CDOWN.cpp	/^int t, n, d;$/;"	v	typeref:typename:int
+t	UVA/UVA-10077.cpp	/^    int t;$/;"	m	struct:frac	typeref:typename:int	file:
+team	CF-B/216B.cpp	/^void team() {$/;"	f	typeref:typename:void
+v	CF-B/505B.cpp	/^vector<pair<int, int> > v[101];$/;"	v	typeref:typename:vector<pair<int,int>>[101]
+v	SPOJ/CDOWN.cpp	/^map<string, vector<string> > v;$/;"	v	typeref:typename:map<string,vector<string>>
+v	UVA/UVA-439.cpp	/^int v[9][9];$/;"	v	typeref:typename:int[9][9]
+valid	CF-B/152B.cpp	/^bool valid(long long x, long long y) {$/;"	f	typeref:typename:bool
+validMove	UVA/UVA-439.cpp	/^bool validMove(int a, int b) {$/;"	f	typeref:typename:bool
+vertex	CF-B/791B.cpp	/^long long edge, vertex;$/;"	v	typeref:typename:long long
+vii	CF-B/216B.cpp	/^vector<vector<int>> vii(101);$/;"	v	typeref:typename:vector<vector<int>>
+vis	UVA/UVA-11953.cpp	/^bool vis[100][100];$/;"	v	typeref:typename:bool[100][100]
+visited	CF-B/445B.cpp	/^bool visited[51] = {false};$/;"	v	typeref:typename:bool[51]
+visited	CF-B/505B.cpp	/^bool visited[101][101] = {false};$/;"	v	typeref:typename:bool[101][101]
+visited	CF-B/791B.cpp	/^bool visited[150001];$/;"	v	typeref:typename:bool[150001]
+visited	UVA/UVA-11094.cpp	/^bool visited[20][20];$/;"	v	typeref:typename:bool[20][20]
+white	CF-C/225C.cpp	/^int white[1001] = {0};$/;"	v	typeref:typename:int[1001]
+win	SPOJ/TOE1.cpp	/^bool win(char c)$/;"	f	typeref:typename:bool
+win	SPOJ/TOE2.cpp	/^bool win(char c)$/;"	f	typeref:typename:bool
+win	UVA/UVA-10368.cpp	/^bool win(int a, int b) {$/;"	f	typeref:typename:bool
+x	CF-C/225C.cpp	/^int n, m, x, y;$/;"	v	typeref:typename:int
+xc	CF-B/152B.cpp	/^int n, m, xc, yc;$/;"	v	typeref:typename:int
+y	CF-C/225C.cpp	/^int n, m, x, y;$/;"	v	typeref:typename:int
+yc	CF-B/152B.cpp	/^int n, m, xc, yc;$/;"	v	typeref:typename:int
