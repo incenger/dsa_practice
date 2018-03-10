@@ -16,6 +16,9 @@ CC	CF-B/makefile	/^CC = g++$/;"	m
 CC	UVA/makefile	/^CC = g++$/;"	m
 EXE	CF-B/makefile	/^EXE = main$/;"	m
 EXE	UVA/makefile	/^EXE = main$/;"	m
+Edge	UVA/UVA-10147.cpp	/^struct Edge {$/;"	s	file:
+Edge	UVA/UVA-10600.cpp	/^struct Edge {$/;"	s	file:
+EdgeCompare	UVA/UVA-10600.cpp	/^struct EdgeCompare {$/;"	s	file:
 HDRS	CF-B/makefile	/^HDRS = $/;"	m
 HDRS	UVA/makefile	/^HDRS = $/;"	m
 MAX	CF-B/152B.cpp	/^#define MAX /;"	d	file:
@@ -31,13 +34,14 @@ OBJS	CF-B/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	UVA/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 SRCS	CF-B/makefile	/^SRCS = 550B.cpp $/;"	m
-SRCS	UVA/makefile	/^SRCS = UVA-1555.cpp $/;"	m
+SRCS	UVA/makefile	/^SRCS = UVA-11503.cpp $/;"	m
 XY	UVA/UVA-10106.cpp	/^const int XY = 62500;$/;"	v	typeref:typename:const int
 a	CF-B/445B.cpp	/^vector<int> a[51];$/;"	v	typeref:typename:vector<int>[51]
 a	CF-B/492B.cpp	/^vector<int> a;$/;"	v	typeref:typename:vector<int>
 a	CF-B/791B.cpp	/^vector<int> a[150001];$/;"	v	typeref:typename:vector<int>[150001]
 a	SPOJ/TOE1.cpp	/^char a[3][3];$/;"	v	typeref:typename:char[3][3]
 a	SPOJ/TOE2.cpp	/^char a[3][3];$/;"	v	typeref:typename:char[3][3]
+a	UVA/UVA-10147.cpp	/^    int a;$/;"	m	struct:Edge	typeref:typename:int	file:
 a	UVA/UVA-10452.cpp	/^string a[10];$/;"	v	typeref:typename:string[10]
 a	UVA/UVA-11953.cpp	/^char a[100][100];$/;"	v	typeref:typename:char[100][100]
 a	UVA/UVA-352.cpp	/^char a[25][25];$/;"	v	typeref:typename:char[25][25]
@@ -45,6 +49,7 @@ a	UVA/UVA-369.cpp	/^long long a[10000][10000];$/;"	v	typeref:typename:long long[
 allowed	CF-C/242C.cpp	/^set<pair<int, int> > allowed;$/;"	v	typeref:typename:set<pair<int,int>>
 automaton	CF-B/448B.cpp	/^bool automaton(string s, string t) {$/;"	f	typeref:typename:bool
 b	UVA/UVA-10077.cpp	/^    int b;$/;"	m	struct:frac	typeref:typename:int	file:
+b	UVA/UVA-10147.cpp	/^    int b;$/;"	m	struct:Edge	typeref:typename:int	file:
 bigMod	UVA/UVA-374.cpp	/^int bigMod(unsigned int a,unsigned int b,unsigned int c) {$/;"	f	typeref:typename:int
 binarySearch	UVA/UVA-10077.cpp	/^void binarySearch(frac q) {$/;"	f	typeref:typename:void
 black	CF-C/225C.cpp	/^int black[1001] = {0};$/;"	v	typeref:typename:int[1001]
@@ -64,6 +69,9 @@ clean	CF-B/makefile	/^clean: $/;"	t
 clean	UVA/makefile	/^clean: $/;"	t
 cmp	SPOJ/PALIN.cpp	/^int cmp() {$/;"	f	typeref:typename:int
 code	SPOJ/ABSYS.cpp	/^const string code = "machula";$/;"	v	typeref:typename:const string
+compare	UVA/UVA-10147.cpp	/^bool compare(const Edge& lhs, const Edge& rhs) {$/;"	f	typeref:typename:bool
+connected	UVA/UVA-10147.cpp	/^bool connected(int x, int y) {$/;"	f	typeref:typename:bool
+connected	UVA/UVA-10600.cpp	/^bool connected(int x, int y) {$/;"	f	typeref:typename:bool
 copy	SPOJ/PALIN.cpp	/^void copy() {$/;"	f	typeref:typename:void
 count	CF-B/216B.cpp	/^int n, m, count;$/;"	v	typeref:typename:int
 countD	SPOJ/CDOWN.cpp	/^int countD(string origin, string name, int h) {$/;"	f	typeref:typename:int
@@ -81,17 +89,31 @@ dfs	UVA/UVA-11094.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
 dfs	UVA/UVA-11953.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
 digit	CF-B/102B.cpp	/^string  digit(string s) {$/;"	f	typeref:typename:string
 direction	CF-B/152B.cpp	/^vector<pair<int, int>> direction;$/;"	v	typeref:typename:vector<pair<int,int>>
+distance	UVA/UVA-10147.cpp	/^double distance(int xa, int ya, int xb, int yb) {$/;"	f	typeref:typename:double
 dp	CF-C/225C.cpp	/^int dp[2][1001];$/;"	v	typeref:typename:int[2][1001]
 edge	CF-B/791B.cpp	/^long long edge, vertex;$/;"	v	typeref:typename:long long
 encode	CF-B/746B.cpp	/^string encode (string s) {$/;"	f	typeref:typename:string
+eps	UVA/UVA-10147.cpp	/^#define eps /;"	d	file:
 f	CF-B/79B.cpp	/^char f[4][1000] = {"Grapes", "Carrots", "Kiwis", "Waste"};$/;"	v	typeref:typename:char[4][1000]
+findRoot	UVA/UVA-10147.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
+findRoot	UVA/UVA-10600.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
+findroot	UVA/UVA-11503.cpp	/^int findroot(int x) {$/;"	f	typeref:typename:int
 frac	UVA/UVA-10077.cpp	/^struct frac {$/;"	s	file:
 gcd	CF-A/9A.cpp	/^int gcd(int m, int n) {$/;"	f	typeref:typename:int
 gcd	SPOJ/POUR1.cpp	/^int gcd(int a, int b)$/;"	f	typeref:typename:int
 gcd	UVA/UVA-408.cpp	/^int gcd(int x, int y) {$/;"	f	typeref:typename:int
 gcd	UVA/UVA-412.cpp	/^int gcd(int a, int b) {$/;"	f	typeref:typename:int
 gen	CF-B/216B.cpp	/^void gen() {$/;"	f	typeref:typename:void
+group	UVA/UVA-10147.cpp	/^void group(int x, int y) {$/;"	f	typeref:typename:void
+group	UVA/UVA-10600.cpp	/^void group(int x, int y) {$/;"	f	typeref:typename:void
+group	UVA/UVA-11503.cpp	/^void group(int x, int y) {$/;"	f	typeref:typename:void
+id	UVA/UVA-10147.cpp	/^int id[1000], sz[1000];$/;"	v	typeref:typename:int[1000]
+id	UVA/UVA-10600.cpp	/^int id[101], sz[101];$/;"	v	typeref:typename:int[101]
+index	UVA/UVA-10600.cpp	/^    int index;$/;"	m	struct:Edge	typeref:typename:int	file:
 init	SPOJ/CDOWN.cpp	/^void init() {$/;"	f	typeref:typename:void
+init	UVA/UVA-10147.cpp	/^void init(int n) {$/;"	f	typeref:typename:void
+init	UVA/UVA-10600.cpp	/^void init(int n) {$/;"	f	typeref:typename:void
+init	UVA/UVA-11503.cpp	/^void init() {$/;"	f	typeref:typename:void
 inside	CF-A/358A.c	/^int inside(int a, int b, int c)$/;"	f	typeref:typename:int
 isDecreasing	CF-B/451B.cpp	/^bool isDecreasing (long long a[], int i1, int i2) {$/;"	f	typeref:typename:bool
 isFull	SPOJ/TOE2.cpp	/^bool isFull()$/;"	f	typeref:typename:bool
@@ -285,11 +307,14 @@ main	SPOJ/TOE2.cpp	/^int main() $/;"	f	typeref:typename:int
 main	UVA/UVA-10077.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-10106.cpp	/^int main()$/;"	f	typeref:typename:int
 main	UVA/UVA-10110.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-10147.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-10368.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-10452.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-10600.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-10865.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-11094.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-11231.cpp	/^int main()$/;"	f	typeref:typename:int
+main	UVA/UVA-11503.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-11953.cpp	/^int main()$/;"	f	typeref:typename:int
 main	UVA/UVA-1555.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-352.cpp	/^int main()$/;"	f	typeref:typename:int
@@ -325,6 +350,7 @@ num	SPOJ/PALIN.cpp	/^string num;$/;"	v	typeref:typename:string
 onlynine	SPOJ/PALIN.cpp	/^bool onlynine(string s) {$/;"	f	typeref:typename:bool
 oo	CF-B/550B.cpp	/^#define oo /;"	d	file:
 oo	CF-C/225C.cpp	/^#define oo /;"	d	file:
+operator () 	UVA/UVA-10600.cpp	/^    bool operator() (const Edge& lhs, const Edge& rhs) const {$/;"	f	struct:EdgeCompare	typeref:typename:bool	file:
 outside	CF-A/358A.c	/^int outside(int a, int b, int c)$/;"	f	typeref:typename:int
 p	SPOJ/CDOWN.cpp	/^map<string, int> p;$/;"	v	typeref:typename:map<string,int>
 panli	CF-A/108A.c	/^int panli(int a, int b)$/;"	f	typeref:typename:int
@@ -341,10 +367,12 @@ rem	CF-B/216B.cpp	/^int rem = 0;$/;"	v	typeref:typename:int
 removezeros	CF-A/75A.c	/^int removezeros(int n)$/;"	f	typeref:typename:int
 res	CF-B/445B.cpp	/^long long res = 1;$/;"	v	typeref:typename:long long
 rever	CF-A/41A.cpp	/^bool rever(string s, string t) {$/;"	f	typeref:typename:bool
+root	UVA/UVA-11503.cpp	/^int root[200001];$/;"	v	typeref:typename:int[200001]
 s1	CF-A/474A.cpp	/^string s1 = "qwertyuiop";$/;"	v	typeref:typename:string
 s2	CF-A/474A.cpp	/^string s2 = "asdfghjkl;";$/;"	v	typeref:typename:string
 s3	CF-A/474A.cpp	/^string s3 = "zxcvbnm,.\/";$/;"	v	typeref:typename:string
 shift	CF-A/474A.cpp	/^char shift(char c, char di) {$/;"	f	typeref:typename:char
+size	UVA/UVA-11503.cpp	/^int size(int x) {$/;"	f	typeref:typename:int
 sol	CF-A/71A.cpp	/^void sol(string s) {$/;"	f	typeref:typename:void
 sol	CF-B/492B.cpp	/^double sol() {$/;"	f	typeref:typename:double
 sol	CF-C/242C.cpp	/^int sol() {$/;"	f	typeref:typename:int
@@ -361,11 +389,16 @@ step	CF-A/731A.cpp	/^int step(char a, char b) {$/;"	f	typeref:typename:int
 step	UVA/UVA-10452.cpp	/^char step[9] = "@IEHOVA#";$/;"	v	typeref:typename:char[9]
 swap	CF-A/144A.c	/^void swap(int *x, int *y)$/;"	f	typeref:typename:void
 swap	CF-A/230A.c	/^void swap(int *a, int *b)$/;"	f	typeref:typename:void
+sz	UVA/UVA-10147.cpp	/^int id[1000], sz[1000];$/;"	v	typeref:typename:int[1000][1000]
+sz	UVA/UVA-10600.cpp	/^int id[101], sz[101];$/;"	v	typeref:typename:int[101][101]
+sz	UVA/UVA-11503.cpp	/^int sz[200001];$/;"	v	typeref:typename:int[200001]
 t	SPOJ/CDOWN.cpp	/^int t, n, d;$/;"	v	typeref:typename:int
 t	UVA/UVA-10077.cpp	/^    int t;$/;"	m	struct:frac	typeref:typename:int	file:
 team	CF-B/216B.cpp	/^void team() {$/;"	f	typeref:typename:void
+used	UVA/UVA-10600.cpp	/^    bool used;$/;"	m	struct:Edge	typeref:typename:bool	file:
 v	CF-B/505B.cpp	/^vector<pair<int, int> > v[101];$/;"	v	typeref:typename:vector<pair<int,int>>[101]
 v	SPOJ/CDOWN.cpp	/^map<string, vector<string> > v;$/;"	v	typeref:typename:map<string,vector<string>>
+v	UVA/UVA-10600.cpp	/^    int v;$/;"	m	struct:Edge	typeref:typename:int	file:
 v	UVA/UVA-439.cpp	/^int v[9][9];$/;"	v	typeref:typename:int[9][9]
 valid	CF-B/152B.cpp	/^bool valid(long long x, long long y) {$/;"	f	typeref:typename:bool
 validMove	UVA/UVA-439.cpp	/^bool validMove(int a, int b) {$/;"	f	typeref:typename:bool
@@ -376,6 +409,9 @@ visited	CF-B/445B.cpp	/^bool visited[51] = {false};$/;"	v	typeref:typename:bool[
 visited	CF-B/505B.cpp	/^bool visited[101][101] = {false};$/;"	v	typeref:typename:bool[101][101]
 visited	CF-B/791B.cpp	/^bool visited[150001];$/;"	v	typeref:typename:bool[150001]
 visited	UVA/UVA-11094.cpp	/^bool visited[20][20];$/;"	v	typeref:typename:bool[20][20]
+w	UVA/UVA-10600.cpp	/^    int w;$/;"	m	struct:Edge	typeref:typename:int	file:
+weight	UVA/UVA-10147.cpp	/^    double weight;$/;"	m	struct:Edge	typeref:typename:double	file:
+weight	UVA/UVA-10600.cpp	/^    int weight;$/;"	m	struct:Edge	typeref:typename:int	file:
 white	CF-C/225C.cpp	/^int white[1001] = {0};$/;"	v	typeref:typename:int[1001]
 win	SPOJ/TOE1.cpp	/^bool win(char c)$/;"	f	typeref:typename:bool
 win	SPOJ/TOE2.cpp	/^bool win(char c)$/;"	f	typeref:typename:bool
