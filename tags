@@ -7,25 +7,25 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/66b4867/
 $(EXE)	CF-B/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
 $(EXE)	UVA/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
-$(EXE)	hackkerrank/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
+$(EXE)	hackerrank/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
 $(OBJS)	CF-B/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 $(OBJS)	UVA/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
-$(OBJS)	hackkerrank/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
+$(OBJS)	hackerrank/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 A	UVA/UVA-378.cpp	/^    double A;$/;"	m	struct:line	typeref:typename:double	file:
 B	UVA/UVA-378.cpp	/^    double B;$/;"	m	struct:line	typeref:typename:double	file:
 C	UVA/UVA-378.cpp	/^    double C;$/;"	m	struct:line	typeref:typename:double	file:
 CC	CF-B/makefile	/^CC = g++$/;"	m
 CC	UVA/makefile	/^CC = g++$/;"	m
-CC	hackkerrank/makefile	/^CC = g++$/;"	m
+CC	hackerrank/makefile	/^CC = g++$/;"	m
 EXE	CF-B/makefile	/^EXE = main$/;"	m
 EXE	UVA/makefile	/^EXE = main$/;"	m
-EXE	hackkerrank/makefile	/^EXE = main$/;"	m
+EXE	hackerrank/makefile	/^EXE = main$/;"	m
 Edge	UVA/UVA-10147.cpp	/^struct Edge {$/;"	s	file:
 Edge	UVA/UVA-10600.cpp	/^struct Edge {$/;"	s	file:
 EdgeCompare	UVA/UVA-10600.cpp	/^struct EdgeCompare {$/;"	s	file:
 HDRS	CF-B/makefile	/^HDRS = $/;"	m
 HDRS	UVA/makefile	/^HDRS = $/;"	m
-HDRS	hackkerrank/makefile	/^HDRS = $/;"	m
+HDRS	hackerrank/makefile	/^HDRS = $/;"	m
 MAX	CF-B/152B.cpp	/^#define MAX /;"	d	file:
 MAX	CF-B/230B.cpp	/^const long long MAX = 1000000000000;$/;"	v	typeref:typename:const long long
 MAX	CF-B/236B.cpp	/^#define MAX /;"	d	file:
@@ -37,11 +37,11 @@ MOD	CF-B/236B.cpp	/^#define MOD /;"	d	file:
 MOD	CF-B/584B.cpp	/^const unsigned long long MOD = 1000000007;$/;"	v	typeref:typename:const unsigned long long
 OBJS	CF-B/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	UVA/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
-OBJS	hackkerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
+OBJS	hackerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 SRCS	CF-B/makefile	/^SRCS = 550B.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-11503.cpp $/;"	m
-SRCS	hackkerrank/makefile	/^SRCS = recursive-digit-sum.cpp $/;"	m
+SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
 XY	UVA/UVA-10106.cpp	/^const int XY = 62500;$/;"	v	typeref:typename:const int
 a	CF-B/445B.cpp	/^vector<int> a[51];$/;"	v	typeref:typename:vector<int>[51]
 a	CF-B/492B.cpp	/^vector<int> a;$/;"	v	typeref:typename:vector<int>
@@ -74,7 +74,7 @@ calcW	CF-C/225C.cpp	/^int calcW(int j, int d) {$/;"	f	typeref:typename:int
 cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<pair<int,int>,int>
 clean	CF-B/makefile	/^clean: $/;"	t
 clean	UVA/makefile	/^clean: $/;"	t
-clean	hackkerrank/makefile	/^clean: $/;"	t
+clean	hackerrank/makefile	/^clean: $/;"	t
 cmp	SPOJ/PALIN.cpp	/^int cmp() {$/;"	f	typeref:typename:int
 code	SPOJ/ABSYS.cpp	/^const string code = "machula";$/;"	v	typeref:typename:const string
 compare	UVA/UVA-10147.cpp	/^bool compare(const Edge& lhs, const Edge& rhs) {$/;"	f	typeref:typename:bool
@@ -96,7 +96,7 @@ dfs	UVA/UVA-10452.cpp	/^void dfs(int i, int j, int k) {$/;"	f	typeref:typename:v
 dfs	UVA/UVA-11094.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
 dfs	UVA/UVA-11953.cpp	/^int dfs(int i, int j) {$/;"	f	typeref:typename:int
 digit	CF-B/102B.cpp	/^string  digit(string s) {$/;"	f	typeref:typename:string
-digitSum	hackkerrank/recursive-digit-sum.cpp	/^int digitSum(string n, int k) {$/;"	f	typeref:typename:int
+digitSum	hackerrank/recursive-digit-sum.cpp	/^int digitSum(string n, int k) {$/;"	f	typeref:typename:int
 direction	CF-B/152B.cpp	/^vector<pair<int, int>> direction;$/;"	v	typeref:typename:vector<pair<int,int>>
 distance	UVA/UVA-10147.cpp	/^double distance(int xa, int ya, int xb, int yb) {$/;"	f	typeref:typename:double
 dp	CF-C/225C.cpp	/^int dp[2][1001];$/;"	v	typeref:typename:int[2][1001]
@@ -334,8 +334,11 @@ main	UVA/UVA-408.cpp	/^int main()$/;"	f	typeref:typename:int
 main	UVA/UVA-412.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-439.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	UVA/UVA-713.cpp	/^int main() {$/;"	f	typeref:typename:int
-main	hackkerrank/recursive-digit-sum.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	hackerrank/password-cracker.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	hackerrank/recursive-digit-sum.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	hackerrank/stone-division-2.cpp	/^int main() {$/;"	f	typeref:typename:int
 marked	CF-B/216B.cpp	/^bool marked[101];$/;"	v	typeref:typename:bool[101]
+matchPassword	hackerrank/password-cracker.cpp	/^bool matchPassword(vector<string> &pass, string attempt, vector<string> &index,  int begin, vect/;"	f	typeref:typename:bool
 maxElement	CF-A/768A.cpp	/^int maxElement(int a[], int sz) {$/;"	f	typeref:typename:int
 maxElement	CF-B/451B.cpp	/^long long maxElement(long long a[], int i1, int i2) {$/;"	f	typeref:typename:long long
 maybe	CF-A/807A.cpp	/^bool maybe(int a[], int sz) {$/;"	f	typeref:typename:bool
@@ -366,6 +369,7 @@ p	SPOJ/CDOWN.cpp	/^map<string, int> p;$/;"	v	typeref:typename:map<string,int>
 panli	CF-A/108A.c	/^int panli(int a, int b)$/;"	f	typeref:typename:int
 panli	SPOJ/PALIN.cpp	/^void panli() {$/;"	f	typeref:typename:void
 parseInt	SPOJ/ABSYS.cpp	/^int parseInt(string s) {$/;"	f	typeref:typename:int
+passwordCracker	hackerrank/password-cracker.cpp	/^void passwordCracker(vector<string> &pass, string attempt, vector<string> &index, vector<bool>& /;"	f	typeref:typename:void
 path	CF-B/445B.cpp	/^int path;$/;"	v	typeref:typename:int
 path	CF-B/505B.cpp	/^int path;$/;"	v	typeref:typename:int
 path	UVA/UVA-10077.cpp	/^string path = "";$/;"	v	typeref:typename:string
@@ -397,6 +401,7 @@ square	CF-B/141B.cpp	/^int square(int x, int y, int a) {$/;"	f	typeref:typename:
 start	CF-C/242C.cpp	/^pair<int, int> start, final;$/;"	v	typeref:typename:pair<int,int>
 step	CF-A/731A.cpp	/^int step(char a, char b) {$/;"	f	typeref:typename:int
 step	UVA/UVA-10452.cpp	/^char step[9] = "@IEHOVA#";$/;"	v	typeref:typename:char[9]
+stoneDivision	hackerrank/stone-division-2.cpp	/^long long stoneDivision(long long n, vector<long long> &s, unordered_map<long long, long long> &/;"	f	typeref:typename:long long
 swap	CF-A/144A.c	/^void swap(int *x, int *y)$/;"	f	typeref:typename:void
 swap	CF-A/230A.c	/^void swap(int *a, int *b)$/;"	f	typeref:typename:void
 sz	UVA/UVA-10147.cpp	/^int id[1000], sz[1000];$/;"	v	typeref:typename:int[1000][1000]
