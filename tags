@@ -11,12 +11,16 @@ $(EXE)	hackerrank/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
 $(OBJS)	CF-B/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 $(OBJS)	UVA/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 $(OBJS)	hackerrank/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
+A	GoogleCodeJam/PracticeSession/testing_tool.py	/^A = 0$/;"	v
 A	UVA/UVA-378.cpp	/^    double A;$/;"	m	struct:line	typeref:typename:double	file:
+B	GoogleCodeJam/PracticeSession/testing_tool.py	/^B = 10$/;"	v
 B	UVA/UVA-378.cpp	/^    double B;$/;"	m	struct:line	typeref:typename:double	file:
 C	UVA/UVA-378.cpp	/^    double C;$/;"	m	struct:line	typeref:typename:double	file:
 CC	CF-B/makefile	/^CC = g++$/;"	m
 CC	UVA/makefile	/^CC = g++$/;"	m
 CC	hackerrank/makefile	/^CC = g++$/;"	m
+CORRECT_GUESS_LIST	GoogleCodeJam/PracticeSession/testing_tool.py	/^CORRECT_GUESS_LIST = [3, 7, 8, 1, 5]$/;"	v
+CheckSubprocessExit	GoogleCodeJam/PracticeSession/testing_tool.py	/^def CheckSubprocessExit(p, case_id):$/;"	f
 EXE	CF-B/makefile	/^EXE = main$/;"	m
 EXE	UVA/makefile	/^EXE = main$/;"	m
 EXE	hackerrank/makefile	/^EXE = main$/;"	m
@@ -36,15 +40,21 @@ MAX	CF-B/492B.cpp	/^#define MAX /;"	d	file:
 MAX	CF-B/810B.cpp	/^#define MAX /;"	d	file:
 MOD	CF-B/236B.cpp	/^#define MOD /;"	d	file:
 MOD	CF-B/584B.cpp	/^const unsigned long long MOD = 1000000007;$/;"	v	typeref:typename:const unsigned long long
+N	GoogleCodeJam/PracticeSession/testing_tool.py	/^N = 10$/;"	v
+NUM_TEST_CASES	GoogleCodeJam/PracticeSession/testing_tool.py	/^NUM_TEST_CASES = len(CORRECT_GUESS_LIST)$/;"	v
 Node	UVA/UVA-122.cpp	/^struct Node {$/;"	s	file:
 OBJS	CF-B/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	UVA/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	hackerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
+PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
 SRCS	CF-B/makefile	/^SRCS = 415B.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
 SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
+USAGE_MSG	GoogleCodeJam/PracticeSession/testing_tool.py	/^USAGE_MSG = """$/;"	v
+WaitForSubprocess	GoogleCodeJam/PracticeSession/testing_tool.py	/^def WaitForSubprocess(p):$/;"	f
+WrongAnswerExit	GoogleCodeJam/PracticeSession/testing_tool.py	/^def WrongAnswerExit(p, case_id, error_msg):$/;"	f
 XY	UVA/UVA-10106.cpp	/^const int XY = 62500;$/;"	v	typeref:typename:const int
 a	CF-B/445B.cpp	/^vector<int> a[51];$/;"	v	typeref:typename:vector<int>[51]
 a	CF-B/492B.cpp	/^vector<int> a;$/;"	v	typeref:typename:vector<int>
@@ -58,6 +68,7 @@ a	UVA/UVA-11953.cpp	/^char a[100][100];$/;"	v	typeref:typename:char[100][100]
 a	UVA/UVA-352.cpp	/^char a[25][25];$/;"	v	typeref:typename:char[25][25]
 a	UVA/UVA-369.cpp	/^long long a[10000][10000];$/;"	v	typeref:typename:long long[10000][10000]
 allowed	CF-C/242C.cpp	/^set<pair<int, int> > allowed;$/;"	v	typeref:typename:set<pair<int,int>>
+answer	GoogleCodeJam/PracticeSession/testing_tool.py	/^  answer = CORRECT_GUESS_LIST[i]$/;"	v
 assign	UVA/UVA-122.cpp	/^    int assign;$/;"	m	struct:Node	typeref:typename:int	file:
 automaton	CF-B/448B.cpp	/^bool automaton(string s, string t) {$/;"	f	typeref:typename:bool
 b	UVA/UVA-10077.cpp	/^    int b;$/;"	m	struct:frac	typeref:typename:int	file:
@@ -79,9 +90,11 @@ calcHeight	SPOJ/CDOWN.cpp	/^int calcHeight(string name) {$/;"	f	typeref:typename
 calcW	CF-C/225C.cpp	/^int calcW(int j, int d) {$/;"	f	typeref:typename:int
 cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<pair<int,int>,int>
 check	UVA/UVA-122.cpp	/^    bool check;$/;"	m	struct:Node	typeref:typename:bool	file:
+checksurrond	GoogleCodeJam/GCJ2018/gopher.cpp	/^int checksurrond(bool a[][1001], int r, int c) {$/;"	f	typeref:typename:int
 clean	CF-B/makefile	/^clean: $/;"	t
 clean	UVA/makefile	/^clean: $/;"	t
 clean	hackerrank/makefile	/^clean: $/;"	t
+cmd	GoogleCodeJam/PracticeSession/testing_tool.py	/^cmd = sys.argv[1:]$/;"	v
 cmp	SPOJ/PALIN.cpp	/^int cmp() {$/;"	f	typeref:typename:int
 code	SPOJ/ABSYS.cpp	/^const string code = "machula";$/;"	v	typeref:typename:const string
 compare	UVA/UVA-10147.cpp	/^bool compare(const Edge& lhs, const Edge& rhs) {$/;"	f	typeref:typename:bool
@@ -113,6 +126,7 @@ dp	CF-C/225C.cpp	/^int dp[2][1001];$/;"	v	typeref:typename:int[2][1001]
 edge	CF-B/791B.cpp	/^long long edge, vertex;$/;"	v	typeref:typename:long long
 encode	CF-B/746B.cpp	/^string encode (string s) {$/;"	f	typeref:typename:string
 eps	UVA/UVA-10147.cpp	/^#define eps /;"	d	file:
+extra_output	GoogleCodeJam/PracticeSession/testing_tool.py	/^extra_output = p.stdout.readline()$/;"	v
 f	CF-B/79B.cpp	/^char f[4][1000] = {"Grapes", "Carrots", "Kiwis", "Waste"};$/;"	v	typeref:typename:char[4][1000]
 findRoot	UVA/UVA-10147.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
 findRoot	UVA/UVA-10369.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
@@ -320,6 +334,10 @@ main	CF-C/242C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/545C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/550C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/699C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	GoogleCodeJam/GCJ2018/gopher.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	GoogleCodeJam/GCJ2018/savingtheuniverseagain.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	GoogleCodeJam/GCJ2018/troublesort.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	GoogleCodeJam/PracticeSession/numberguessing.cpp	/^int main(){$/;"	f	typeref:typename:int
 main	LTTCoder/DOIGIAY.cpp	/^int main(){$/;"	f	typeref:typename:int
 main	SPOJ/ABSYS.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	SPOJ/AGGRCOW.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -397,6 +415,7 @@ phi	CF-A/284A.c	/^int  phi(int n)$/;"	f	typeref:typename:int
 position	UVA/UVA-122.cpp	/^unsigned long long position(string p) {$/;"	f	typeref:typename:unsigned long long
 powMOD	CF-B/584B.cpp	/^long long powMOD(long long a, long long b) {$/;"	f	typeref:typename:long long
 prime	CF-A/284A.c	/^int prime(int n)$/;"	f	typeref:typename:int
+q	GoogleCodeJam/PracticeSession/testing_tool.py	/^      q = int(user_input)$/;"	v
 rated	CF-A/807A.cpp	/^bool rated(int a[], int b[], int sz) {$/;"	f	typeref:typename:bool
 rem	CF-B/216B.cpp	/^int rem = 0;$/;"	v	typeref:typename:int
 removezeros	CF-A/75A.c	/^int removezeros(int n)$/;"	f	typeref:typename:int
@@ -432,7 +451,10 @@ sz	UVA/UVA-11503.cpp	/^int sz[200001];$/;"	v	typeref:typename:int[200001]
 t	SPOJ/CDOWN.cpp	/^int t, n, d;$/;"	v	typeref:typename:int
 t	UVA/UVA-10077.cpp	/^    int t;$/;"	m	struct:frac	typeref:typename:int	file:
 team	CF-B/216B.cpp	/^void team() {$/;"	f	typeref:typename:void
+test_case_passed	GoogleCodeJam/PracticeSession/testing_tool.py	/^      test_case_passed = True$/;"	v
+test_case_passed	GoogleCodeJam/PracticeSession/testing_tool.py	/^  test_case_passed = False$/;"	v
 used	UVA/UVA-10600.cpp	/^    bool used;$/;"	m	struct:Edge	typeref:typename:bool	file:
+user_input	GoogleCodeJam/PracticeSession/testing_tool.py	/^    user_input = None$/;"	v
 v	CF-B/505B.cpp	/^vector<pair<int, int> > v[101];$/;"	v	typeref:typename:vector<pair<int,int>>[101]
 v	SPOJ/CDOWN.cpp	/^map<string, vector<string> > v;$/;"	v	typeref:typename:map<string,vector<string>>
 v	UVA/UVA-10600.cpp	/^    int v;$/;"	m	struct:Edge	typeref:typename:int	file:
