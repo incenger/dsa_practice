@@ -109,6 +109,7 @@ connected	UVA/UVA-10369.cpp	/^bool connected(int x, int y) {$/;"	f	typeref:typen
 connected	UVA/UVA-10600.cpp	/^bool connected(int x, int y) {$/;"	f	typeref:typename:bool
 copy	SPOJ/PALIN.cpp	/^void copy() {$/;"	f	typeref:typename:void
 count	CF-B/216B.cpp	/^int n, m, count;$/;"	v	typeref:typename:int
+countChoco	GoogleCodeJam/Round1A/WaffleChoppers.cpp	/^int countChoco(vector<vector<char>>& cell, int bc, int ec, int br, int er) {$/;"	f	typeref:typename:int
 countD	SPOJ/CDOWN.cpp	/^int countD(string origin, string name, int h) {$/;"	f	typeref:typename:int
 countWE	UVA/UVA-352.cpp	/^int countWE(int i, int j) {$/;"	f	typeref:typename:int
 cut	CF-A/358A.c	/^int cut (int a, int b, int c, int d)$/;"	f	typeref:typename:int
@@ -164,6 +165,8 @@ init	UVA/UVA-122.cpp	/^void init() {$/;"	f	typeref:typename:void
 inside	CF-A/358A.c	/^int inside(int a, int b, int c)$/;"	f	typeref:typename:int
 isBeautiful	CF-B/614B.cpp	/^bool isBeautiful(string s) {$/;"	f	typeref:typename:bool
 isDecreasing	CF-B/451B.cpp	/^bool isDecreasing (long long a[], int i1, int i2) {$/;"	f	typeref:typename:bool
+isDividedHorizontal	GoogleCodeJam/Round1A/WaffleChoppers.cpp	/^vector<int> isDividedHorizontal(vector<vector<char>>& cell, int n, int m, int b, int e, int h) {$/;"	f	typeref:typename:vector<int>
+isDividedVertical	GoogleCodeJam/Round1A/WaffleChoppers.cpp	/^vector<int> isDividedVertical(vector<vector<char>>& cell, int n, int m, int b, int e, int v) {$/;"	f	typeref:typename:vector<int>
 isFull	SPOJ/TOE2.cpp	/^bool isFull()$/;"	f	typeref:typename:bool
 isIncreasing	CF-B/451B.cpp	/^bool isIncreasing (long long a[], int i1, int i2) {$/;"	f	typeref:typename:bool
 isKGood	CF-A/365A.cpp	/^bool isKGood(string s, int k) {$/;"	f	typeref:typename:bool
@@ -360,6 +363,7 @@ main	GoogleCodeJam/GCJ2018/gopher.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/savingtheuniverseagain.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/troublesort.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/PracticeSession/numberguessing.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	GoogleCodeJam/Round1A/WaffleChoppers.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	LTTCoder/DOIGIAY.cpp	/^int main(){$/;"	f	typeref:typename:int
 main	SPOJ/ABSYS.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	SPOJ/AGGRCOW.cpp	/^int main() {$/;"	f	typeref:typename:int
