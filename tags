@@ -5,10 +5,9 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/66b4867/
-$(EXE)	CF-B/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
+$(EXE)	CF-B/makefile	/^$(EXE) : $(SRCS)  makefile$/;"	t
 $(EXE)	UVA/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
 $(EXE)	hackerrank/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
-$(OBJS)	CF-B/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 $(OBJS)	UVA/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 $(OBJS)	hackerrank/makefile	/^$(OBJS) : $(HDRS) makefile$/;"	t
 A	GoogleCodeJam/PracticeSession/testing_tool.py	/^A = 0$/;"	v
@@ -28,7 +27,6 @@ Edge	UVA/UVA-10147.cpp	/^struct Edge {$/;"	s	file:
 Edge	UVA/UVA-10369.cpp	/^struct Edge {$/;"	s	file:
 Edge	UVA/UVA-10600.cpp	/^struct Edge {$/;"	s	file:
 EdgeCompare	UVA/UVA-10600.cpp	/^struct EdgeCompare {$/;"	s	file:
-HDRS	CF-B/makefile	/^HDRS = $/;"	m
 HDRS	UVA/makefile	/^HDRS = $/;"	m
 HDRS	hackerrank/makefile	/^HDRS = $/;"	m
 MAX	CF-B/152B.cpp	/^#define MAX /;"	d	file:
@@ -43,13 +41,12 @@ MOD	CF-B/584B.cpp	/^const unsigned long long MOD = 1000000007;$/;"	v	typeref:typ
 N	GoogleCodeJam/PracticeSession/testing_tool.py	/^N = 10$/;"	v
 NUM_TEST_CASES	GoogleCodeJam/PracticeSession/testing_tool.py	/^NUM_TEST_CASES = len(CORRECT_GUESS_LIST)$/;"	v
 Node	UVA/UVA-122.cpp	/^struct Node {$/;"	s	file:
-OBJS	CF-B/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	UVA/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 OBJS	hackerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
 PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
-SRCS	CF-B/makefile	/^SRCS = 415B.cpp $/;"	m
+SRCS	CF-B/makefile	/^SRCS = 525B.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
 SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
 USAGE_MSG	GoogleCodeJam/PracticeSession/testing_tool.py	/^USAGE_MSG = """$/;"	v
@@ -307,6 +304,8 @@ main	CF-B/236B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/253B.cpp	/^int main () {$/;"	f	typeref:typename:int
 main	CF-B/262B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/26B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/276B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/282B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/287B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/337B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/339B.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -317,6 +316,7 @@ main	CF-B/376B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/385B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/400B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/415B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/435B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/439B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/445B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/448B.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -331,6 +331,7 @@ main	CF-B/505B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/510B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/514B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/520B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/525B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/544B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/550B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/580B.cpp	/^int main() {$/;"	f	typeref:typename:int
