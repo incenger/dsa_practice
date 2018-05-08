@@ -5,7 +5,9 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/66b4867/
+$(EXE)	CF-A/makefile	/^$(EXE) : $(SRCS)  makefile$/;"	t
 $(EXE)	CF-B/makefile	/^$(EXE) : $(SRCS)  makefile$/;"	t
+$(EXE)	CF-C/makefile	/^$(EXE) : $(SRCS)  makefile$/;"	t
 $(EXE)	GoogleCodeJam/Round1B/makefile	/^$(EXE) : $(SRCS)  makefile$/;"	t
 $(EXE)	UVA/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
 $(EXE)	hackerrank/makefile	/^$(EXE) : $(OBJS) $(HDRS) makefile$/;"	t
@@ -17,13 +19,17 @@ AutoLoan	TopCoder/PracticeProblems/AutoLoan.cpp	/^class AutoLoan {$/;"	c	file:
 B	GoogleCodeJam/PracticeSession/testing_tool.py	/^B = 10$/;"	v
 B	UVA/UVA-378.cpp	/^    double B;$/;"	m	struct:line	typeref:typename:double	file:
 C	UVA/UVA-378.cpp	/^    double C;$/;"	m	struct:line	typeref:typename:double	file:
+CC	CF-A/makefile	/^CC = g++$/;"	m
 CC	CF-B/makefile	/^CC = g++$/;"	m
+CC	CF-C/makefile	/^CC = g++$/;"	m
 CC	GoogleCodeJam/Round1B/makefile	/^CC = g++$/;"	m
 CC	UVA/makefile	/^CC = g++$/;"	m
 CC	hackerrank/makefile	/^CC = g++$/;"	m
 CORRECT_GUESS_LIST	GoogleCodeJam/PracticeSession/testing_tool.py	/^CORRECT_GUESS_LIST = [3, 7, 8, 1, 5]$/;"	v
 CheckSubprocessExit	GoogleCodeJam/PracticeSession/testing_tool.py	/^def CheckSubprocessExit(p, case_id):$/;"	f
+EXE	CF-A/makefile	/^EXE = main$/;"	m
 EXE	CF-B/makefile	/^EXE = main$/;"	m
+EXE	CF-C/makefile	/^EXE = main$/;"	m
 EXE	GoogleCodeJam/Round1B/makefile	/^EXE = main$/;"	m
 EXE	UVA/makefile	/^EXE = main$/;"	m
 EXE	hackerrank/makefile	/^EXE = main$/;"	m
@@ -49,7 +55,9 @@ OBJS	hackerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
 PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
-SRCS	CF-B/makefile	/^SRCS = 230B.cpp $/;"	m
+SRCS	CF-A/makefile	/^SRCS = 778A.cpp $/;"	m
+SRCS	CF-B/makefile	/^SRCS = 755B.cpp $/;"	m
+SRCS	CF-C/makefile	/^SRCS = 230B.cpp $/;"	m
 SRCS	GoogleCodeJam/Round1B/makefile	/^SRCS = 1.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
 SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
@@ -97,7 +105,9 @@ cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<p
 check	CF-B/486B.cpp	/^bool check() {$/;"	f	typeref:typename:bool
 check	UVA/UVA-122.cpp	/^    bool check;$/;"	m	struct:Node	typeref:typename:bool	file:
 checksurrond	GoogleCodeJam/GCJ2018/gopher.cpp	/^int checksurrond(bool a[][1001], int r, int c) {$/;"	f	typeref:typename:int
+clean	CF-A/makefile	/^clean: $/;"	t
 clean	CF-B/makefile	/^clean: $/;"	t
+clean	CF-C/makefile	/^clean: $/;"	t
 clean	GoogleCodeJam/Round1B/makefile	/^clean: $/;"	t
 clean	UVA/makefile	/^clean: $/;"	t
 clean	hackerrank/makefile	/^clean: $/;"	t
@@ -179,6 +189,7 @@ isIncreasing	CF-B/451B.cpp	/^bool isIncreasing (long long a[], int i1, int i2) {
 isKGood	CF-A/365A.cpp	/^bool isKGood(string s, int k) {$/;"	f	typeref:typename:bool
 isPrime	CF-A/80A.cpp	/^bool isPrime(int n) {$/;"	f	typeref:typename:bool
 isPrime	CF-B/230B.cpp	/^bool isPrime(int n) {$/;"	f	typeref:typename:bool
+isSubsequence	CF-A/778A.cpp	/^bool isSubsequence(string a, string b, int aIndex, int bIndex) {$/;"	f	typeref:typename:bool
 isValid	CF-B/510B.cpp	/^bool isValid(int i , int j) {$/;"	f	typeref:typename:bool
 isVowel	CF-A/118A.cpp	/^bool isVowel(char c) {$/;"	f	typeref:typename:bool
 l	CF-B/492B.cpp	/^int n, l;$/;"	v	typeref:typename:int
@@ -211,6 +222,7 @@ main	CF-A/225A.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-A/228A.cpp	/^int main()$/;"	f	typeref:typename:int
 main	CF-A/230A.c	/^int main (void)$/;"	f	typeref:typename:int
 main	CF-A/236A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/251A.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-A/255A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/257A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/262A.c	/^int main(void) {$/;"	f	typeref:typename:int
@@ -294,6 +306,7 @@ main	CF-A/766A.cpp	/^int main()$/;"	f	typeref:typename:int
 main	CF-A/767A.cpp	/^int main()$/;"	f	typeref:typename:int
 main	CF-A/768A.cpp	/^int main()$/;"	f	typeref:typename:int
 main	CF-A/770A.cpp	/^int main()$/;"	f	typeref:typename:int
+main	CF-A/778A.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-A/785A.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-A/791A.cpp	/^int main()$/;"	f	typeref:typename:int
 main	CF-A/799A.cpp	/^int main()$/;"	f	typeref:typename:int
@@ -367,6 +380,7 @@ main	CF-B/714B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/716B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/743B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/746B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/755B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/766B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/78B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/791B.cpp	/^int main() {$/;"	f	typeref:typename:int
