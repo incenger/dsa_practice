@@ -55,8 +55,8 @@ OBJS	hackerrank/makefile	/^OBJS = $(SRCS:.cpp=.o)$/;"	m
 PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const double
 Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
 PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
-SRCS	CF-A/makefile	/^SRCS = 778A.cpp $/;"	m
-SRCS	CF-B/makefile	/^SRCS = 755B.cpp $/;"	m
+SRCS	CF-A/makefile	/^SRCS = 372A.cpp $/;"	m
+SRCS	CF-B/makefile	/^SRCS = 816B.cpp $/;"	m
 SRCS	CF-C/makefile	/^SRCS = 750C.cpp $/;"	m
 SRCS	GoogleCodeJam/Round1B/makefile	/^SRCS = 1.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
@@ -103,7 +103,6 @@ calcHeight	SPOJ/CDOWN.cpp	/^int calcHeight(string name) {$/;"	f	typeref:typename
 calcW	CF-C/225C.cpp	/^int calcW(int j, int d) {$/;"	f	typeref:typename:int
 cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<pair<int,int>,int>
 check	CF-B/486B.cpp	/^bool check() {$/;"	f	typeref:typename:bool
-check	CF-C/750C.cpp	/^int check(long long ra, vector<int>& c, vector<int>& d) {$/;"	f	typeref:typename:int
 check	UVA/UVA-122.cpp	/^    bool check;$/;"	m	struct:Node	typeref:typename:bool	file:
 checksurrond	GoogleCodeJam/GCJ2018/gopher.cpp	/^int checksurrond(bool a[][1001], int r, int c) {$/;"	f	typeref:typename:int
 clean	CF-A/makefile	/^clean: $/;"	t
@@ -156,6 +155,7 @@ f	CF-B/79B.cpp	/^char f[4][1000] = {"Grapes", "Carrots", "Kiwis", "Waste"};$/;"	
 findRoot	UVA/UVA-10147.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
 findRoot	UVA/UVA-10369.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
 findRoot	UVA/UVA-10600.cpp	/^int findRoot(int x) {$/;"	f	typeref:typename:int
+findp	CF-B/271B.cpp	/^int findp(int x) {$/;"	f	typeref:typename:int
 findroot	UVA/UVA-11503.cpp	/^int findroot(int x) {$/;"	f	typeref:typename:int
 frac	UVA/UVA-10077.cpp	/^struct frac {$/;"	s	file:
 gcd	CF-A/9A.cpp	/^int gcd(int m, int n) {$/;"	f	typeref:typename:int
@@ -252,6 +252,7 @@ main	CF-A/358A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/359A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/365A.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-A/370A.c	/^int main(void) { $/;"	f	typeref:typename:int
+main	CF-A/372A.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-A/373A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/376A.c	/^int main(void) {$/;"	f	typeref:typename:int
 main	CF-A/378A.c	/^int main(void) {$/;"	f	typeref:typename:int
@@ -331,6 +332,7 @@ main	CF-B/236B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/253B.cpp	/^int main () {$/;"	f	typeref:typename:int
 main	CF-B/262B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/26B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/271B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/276B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/279B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/282B.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -388,6 +390,7 @@ main	CF-B/791B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/796B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/79B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/810B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/816B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/88B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/911B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-C/225C.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -497,10 +500,12 @@ removezeros	CF-A/75A.c	/^int removezeros(int n)$/;"	f	typeref:typename:int
 res	CF-B/445B.cpp	/^long long res = 1;$/;"	v	typeref:typename:long long
 rever	CF-A/41A.cpp	/^bool rever(string s, string t) {$/;"	f	typeref:typename:bool
 root	UVA/UVA-11503.cpp	/^int root[200001];$/;"	v	typeref:typename:int[200001]
+s	CF-B/271B.cpp	/^vector<bool> s(100005, true);$/;"	v	typeref:typename:vector<bool>
 s1	CF-A/474A.cpp	/^string s1 = "qwertyuiop";$/;"	v	typeref:typename:string
 s2	CF-A/474A.cpp	/^string s2 = "asdfghjkl;";$/;"	v	typeref:typename:string
 s3	CF-A/474A.cpp	/^string s3 = "zxcvbnm,.\/";$/;"	v	typeref:typename:string
 shift	CF-A/474A.cpp	/^char shift(char c, char di) {$/;"	f	typeref:typename:char
+sieve	CF-B/271B.cpp	/^void sieve() {$/;"	f	typeref:typename:void
 size	UVA/UVA-11503.cpp	/^int size(int x) {$/;"	f	typeref:typename:int
 sol	CF-A/71A.cpp	/^void sol(string s) {$/;"	f	typeref:typename:void
 sol	CF-B/492B.cpp	/^double sol() {$/;"	f	typeref:typename:double
