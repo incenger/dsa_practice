@@ -57,7 +57,7 @@ Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
 PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
 SRCS	CF-A/makefile	/^SRCS = 778A.cpp $/;"	m
 SRCS	CF-B/makefile	/^SRCS = 755B.cpp $/;"	m
-SRCS	CF-C/makefile	/^SRCS = 230B.cpp $/;"	m
+SRCS	CF-C/makefile	/^SRCS = 750C.cpp $/;"	m
 SRCS	GoogleCodeJam/Round1B/makefile	/^SRCS = 1.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
 SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
@@ -103,6 +103,7 @@ calcHeight	SPOJ/CDOWN.cpp	/^int calcHeight(string name) {$/;"	f	typeref:typename
 calcW	CF-C/225C.cpp	/^int calcW(int j, int d) {$/;"	f	typeref:typename:int
 cell	CF-C/242C.cpp	/^map<pair<int, int>, int> cell;$/;"	v	typeref:typename:map<pair<int,int>,int>
 check	CF-B/486B.cpp	/^bool check() {$/;"	f	typeref:typename:bool
+check	CF-C/750C.cpp	/^int check(long long ra, vector<int>& c, vector<int>& d) {$/;"	f	typeref:typename:int
 check	UVA/UVA-122.cpp	/^    bool check;$/;"	m	struct:Node	typeref:typename:bool	file:
 checksurrond	GoogleCodeJam/GCJ2018/gopher.cpp	/^int checksurrond(bool a[][1001], int r, int c) {$/;"	f	typeref:typename:int
 clean	CF-A/makefile	/^clean: $/;"	t
@@ -189,7 +190,7 @@ isIncreasing	CF-B/451B.cpp	/^bool isIncreasing (long long a[], int i1, int i2) {
 isKGood	CF-A/365A.cpp	/^bool isKGood(string s, int k) {$/;"	f	typeref:typename:bool
 isPrime	CF-A/80A.cpp	/^bool isPrime(int n) {$/;"	f	typeref:typename:bool
 isPrime	CF-B/230B.cpp	/^bool isPrime(int n) {$/;"	f	typeref:typename:bool
-isSubsequence	CF-A/778A.cpp	/^bool isSubsequence(string a, string b, int aIndex, int bIndex) {$/;"	f	typeref:typename:bool
+isSubsequence	CF-A/778A.cpp	/^bool isSubsequence(const string& a, const  string& b, int aIndex, int bIndex) {$/;"	f	typeref:typename:bool
 isValid	CF-B/510B.cpp	/^bool isValid(int i , int j) {$/;"	f	typeref:typename:bool
 isVowel	CF-A/118A.cpp	/^bool isVowel(char c) {$/;"	f	typeref:typename:bool
 l	CF-B/492B.cpp	/^int n, l;$/;"	v	typeref:typename:int
@@ -394,7 +395,11 @@ main	CF-C/242C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/466C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-C/545C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/550C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/567C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
+main	CF-C/676C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-C/699C.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-C/701C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
+main	CF-C/750C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/gopher.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/savingtheuniverseagain.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/troublesort.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -501,6 +506,7 @@ sol	CF-A/71A.cpp	/^void sol(string s) {$/;"	f	typeref:typename:void
 sol	CF-B/492B.cpp	/^double sol() {$/;"	f	typeref:typename:double
 sol	CF-B/743B.cpp	/^int sol(int n, long long k) {$/;"	f	typeref:typename:int
 sol	CF-C/242C.cpp	/^int sol() {$/;"	f	typeref:typename:int
+sol	CF-C/676C.cpp	/^int sol(vector<int> &v, char x, int k) {$/;"	f	typeref:typename:int
 sol	SPOJ/AGGRCOW.cpp	/^int sol(vector<long long> &a, int n, int c) {$/;"	f	typeref:typename:int
 sol	SPOJ/PALIN.cpp	/^void sol() {$/;"	f	typeref:typename:void
 sol	SPOJ/POUR1.cpp	/^int sol(int a, int b, int c)$/;"	f	typeref:typename:int
