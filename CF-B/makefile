@@ -8,7 +8,7 @@ FLAGS = -std=c++11 -Wall
 EXE = main
 
 # space-separated list of source files
-SRCS = 816B.cpp 
+SRCS = 165B.cpp 
 
 
 # default target

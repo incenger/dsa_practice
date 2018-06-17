@@ -31,7 +31,10 @@ int main(int argc, char const* argv[]) {
             int mi = (lo + hi)/2;
             bool f = true;
             for (auto& c : type) {
-                if (a[(int)c][i+mi]-a[(int)c][i] < 1) {
+                int upper = 0;
+                if (i + mi > n) upper = a[(int)c][n];
+                else upper = a[(int)c][i+mi];
+                if (upper-a[(int)c][i] < 1) {
                     f = false;
                     break;
                 }

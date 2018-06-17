@@ -120,5 +120,7 @@ tags
 
 # vs code
 .history/
+tempCodeRunnerFile
+tempCodeRunnerFile.cpp
 # End of https://www.gitignore.io/api/c,c++,cmake
 CF-B/.history/165B_20180520112758.cpp

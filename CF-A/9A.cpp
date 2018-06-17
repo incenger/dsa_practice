@@ -10,8 +10,6 @@ int gcd(int m, int n) {
     return gcd(n, m%n);
 }
 
-
-
 int main()
 {
     int a, b;

@@ -56,8 +56,8 @@ PI	CF-A/667A.cpp	/^const double PI = 3.14159265359;$/;"	v	typeref:typename:const
 Point	UVA/UVA-10369.cpp	/^struct Point {$/;"	s	file:
 PrintSubprocessResults	GoogleCodeJam/PracticeSession/testing_tool.py	/^def PrintSubprocessResults(p):$/;"	f
 SRCS	CF-A/makefile	/^SRCS = 372A.cpp $/;"	m
-SRCS	CF-B/makefile	/^SRCS = 816B.cpp $/;"	m
-SRCS	CF-C/makefile	/^SRCS = 750C.cpp $/;"	m
+SRCS	CF-B/makefile	/^SRCS = 165B.cpp $/;"	m
+SRCS	CF-C/makefile	/^SRCS = 785C.cpp $/;"	m
 SRCS	GoogleCodeJam/Round1B/makefile	/^SRCS = 1.cpp $/;"	m
 SRCS	UVA/makefile	/^SRCS = UVA-10369.cpp $/;"	m
 SRCS	hackerrank/makefile	/^SRCS = .\/password-cracker.cpp $/;"	m
@@ -114,6 +114,7 @@ clean	hackerrank/makefile	/^clean: $/;"	t
 cmd	GoogleCodeJam/PracticeSession/testing_tool.py	/^cmd = sys.argv[1:]$/;"	v
 cmp	CF-B/493B.cpp	/^int cmp(vector<int> &a, vector<int> &b) {$/;"	f	typeref:typename:int
 cmp	SPOJ/PALIN.cpp	/^int cmp() {$/;"	f	typeref:typename:int
+code	CF-B/165B.cpp	/^long long code(int v, int k) {$/;"	f	typeref:typename:long long
 code	SPOJ/ABSYS.cpp	/^const string code = "machula";$/;"	v	typeref:typename:const string
 compare	UVA/UVA-10147.cpp	/^bool compare(const Edge& lhs, const Edge& rhs) {$/;"	f	typeref:typename:bool
 compare	UVA/UVA-10369.cpp	/^bool compare(const Edge& lhs, const Edge& rhs) {$/;"	f	typeref:typename:bool
@@ -146,6 +147,7 @@ distance	UVA/UVA-10147.cpp	/^double distance(int xa, int ya, int xb, int yb) {$/
 distance	UVA/UVA-10369.cpp	/^double distance(int xa, int ya, int xb, int yb) {$/;"	f	typeref:typename:double
 dp	CF-C/225C.cpp	/^int dp[2][1001];$/;"	v	typeref:typename:int[2][1001]
 edge	CF-B/791B.cpp	/^long long edge, vertex;$/;"	v	typeref:typename:long long
+empty	CF-C/785C.cpp	/^bool empty(unsigned long long n,unsigned long long m,unsigned long long d) {$/;"	f	typeref:typename:bool
 encode	CF-B/746B.cpp	/^string encode (string s) {$/;"	f	typeref:typename:string
 eps	TopCoder/PracticeProblems/AutoLoan.cpp	/^        double eps = 1e-9;$/;"	m	class:AutoLoan	typeref:typename:double	file:
 eps	TopCoder/PracticeProblems/SortEstimate.cpp	/^        double eps = 1e-10;$/;"	m	class:SortEstimate	typeref:typename:double	file:
@@ -322,6 +324,7 @@ main	CF-B/141B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/144B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/148B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/152B.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	CF-B/165B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/16B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/186B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/215B.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -393,6 +396,7 @@ main	CF-B/810B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/816B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-B/88B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-B/911B.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
+main	CF-C/165C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-C/225C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/242C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/466C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
@@ -403,6 +407,7 @@ main	CF-C/676C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:type
 main	CF-C/699C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	CF-C/701C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
 main	CF-C/750C.cpp	/^int main(int argc, char const* argv[]) {$/;"	f	typeref:typename:int
+main	CF-C/785C.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/gopher.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/savingtheuniverseagain.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	GoogleCodeJam/GCJ2018/troublesort.cpp	/^int main() {$/;"	f	typeref:typename:int
