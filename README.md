@@ -1,2 +1,2 @@
 # Competitive Programming
-Online judges problems
+Solutions of competitive programming problems.
