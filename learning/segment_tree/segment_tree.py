@@ -82,3 +82,56 @@ class SimpleSegmentTree:
             self.tree[node_idx] = self.merge_op(
                 self.tree[left_child_idx], self.tree[right_child_idx]
             )
+
+
+# TODO: This code has better runtime in Python, Check this out
+class EfficientSegmentTree:
+    def __init__(self, arr, merge_op, null_value):
+        self.n = len(arr)
+        self.merge_op = merge_op
+        self.null_value = null_value
+
+        # All the leaves start from index `n`-th
+        self.tree = [0] * self.n + arr
+        self._build()
+
+    def _build(self):
+        for i in range(self.n - 1, -1, -1):
+            self.tree[i] = self.merge_op(self.tree[2 * i], self.tree[2 * i + 1])
+
+    def query(self, l, r):
+        # [l, r)
+
+        # Go to the corresponding leaves node
+        l += self.n
+        r += self.n
+
+        ans = self.null_value
+
+        while l < r:
+            if l & 1:
+                # If l is odd, it's a right children of its parent
+                # This means the query range won't cover the parent of l
+                # We take the value of node at l and move to the right of l's parent
+                # l = (l + 1) // 2 (//2 later)
+                # Otherwise if l is even, then we move to the parent of l
+                # l = l//2
+                ans = self.merge_op(ans, self.tree[l])
+                l += 1
+            if r & 1:
+                # Similar to l, but we need to decrease r first because the r end is excluded
+                r -= 1
+                ans = self.merge_op(ans, self.tree[r])
+            l >>= 1
+            r >>= 1
+        return ans
+
+    def update(self, i, val):
+        i += self.n
+        self.tree[i] = val
+        while i > 1:
+            i >>= 1
+            self.tree[i] = self.merge_op(self.tree[i * 2], self.tree[i * 2 + 1])
+
+    def get(self, i):
+        return self.tree[i + self.n]
