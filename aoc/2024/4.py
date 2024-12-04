@@ -4,6 +4,7 @@ INPUT_FILE = "input.txt"
 DIRS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
 XMAS = "XMAS"
 
+
 def read_input(file):
     with open(file, "r") as f:
         grid = [line.strip() for line in f.readlines()]
@@ -35,13 +36,13 @@ def part_1(file):
                 count += 1
         return count
 
-
     answer = 0
     for r in range(m):
         for c in range(n):
             answer += count_xmas(r, c)
 
     print(f"ANSWER: {answer}")
+
 
 def part_2(file):
     grid = read_input(file)
@@ -54,10 +55,17 @@ def part_2(file):
             return 0
         if center_col == 0 or center_col == n - 1:
             return 0
-        main_diag = "".join([grid[center_row - 1][center_col - 1], grid[center_row + 1][center_col + 1]])
-        second_diag = "".join([grid[center_row - 1][center_col + 1], grid[center_row + 1][center_col - 1]])
+        main_diag = "".join([
+            grid[center_row - 1][center_col - 1],
+            grid[center_row + 1][center_col + 1]
+        ])
+        second_diag = "".join([
+            grid[center_row - 1][center_col + 1],
+            grid[center_row + 1][center_col - 1]
+        ])
 
-        if (main_diag == "MS" or main_diag == "SM") and (second_diag == "MS" or second_diag == "SM"):
+        if (main_diag == "MS" or main_diag == "SM") and (second_diag == "MS" or
+                                                         second_diag == "SM"):
             return 1
         return 0
 
@@ -66,7 +74,6 @@ def part_2(file):
         for c in range(n):
             answer += count_xmas(r, c)
     print(f"ANSWER: {answer}")
-
 
 
 if __name__ == "__main__":

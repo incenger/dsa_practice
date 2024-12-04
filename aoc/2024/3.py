@@ -3,6 +3,7 @@ import re
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
 
+
 def read_input(file):
     with open(file, "r") as f:
         memory_lines = [line.strip() for line in f.readlines()]
@@ -18,6 +19,7 @@ def part_1(file):
             result += int(num_1) * int(num_2)
     print(f"ANSWER: {result}")
 
+
 def part_2(file):
     memory_lines = read_input(file)
     mul_pattern = r"mul\((\d+),(\d+)\)|(don't\(\))|(do())"
@@ -32,7 +34,6 @@ def part_2(file):
             if match[0] and match[1] and enable:
                 result += int(match[0]) * int(match[1])
     print(f"ANSWER: {result}")
-
 
 
 if __name__ == "__main__":

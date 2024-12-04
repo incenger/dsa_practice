@@ -3,6 +3,7 @@ from collections import Counter
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
 
+
 def read_input(file):
     list_1, list_2 = [], []
     with open(file, "r") as f:
@@ -13,6 +14,7 @@ def read_input(file):
 
     return list_1, list_2
 
+
 def part_1(file):
     list_1, list_2 = read_input(file)
     list_1.sort()
@@ -21,6 +23,7 @@ def part_1(file):
     for num_1, num_2 in zip(list_1, list_2):
         total_dist += abs(num_1 - num_2)
     print(f"ANSWER: {total_dist}")
+
 
 def part_2(file):
     list_1, list_2 = read_input(file)
