@@ -5,6 +5,7 @@ INPUT_FILE = "input.txt"
 
 DIRS = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
+
 def read_input(file):
     problem_map = []
     with open(file, "r") as f:
@@ -42,21 +43,19 @@ def part_1(file):
     print("ANSWER:", answer)
 
 
-def run_cycle(problem_map, start_row, start_col):
+def run_cycle(problem_map, start_row, start_col, start_dir, visited):
     m, n = len(problem_map), len(problem_map[0])
-    cur_row, cur_col = start_row, start_col
-    cur_direction_idx = 0
-    visited = set()
+    cur_row, cur_col, cur_dir = start_row, start_col, start_dir
     while True:
-        visited.add((cur_row, cur_col, cur_direction_idx))
-        next_row = cur_row + DIRS[cur_direction_idx][0]
-        next_col = cur_col + DIRS[cur_direction_idx][1]
+        visited.add((cur_row, cur_col, cur_dir))
+        next_row = cur_row + DIRS[cur_dir][0]
+        next_col = cur_col + DIRS[cur_dir][1]
         if next_row < 0 or next_row >= m or next_col < 0 or next_col >= n:
             return False
         if problem_map[next_row][next_col] == '#':
-            cur_direction_idx = (cur_direction_idx + 1) % len(DIRS)
+            cur_dir = (cur_dir + 1) % len(DIRS)
         else:
-            if (next_row, next_col, cur_direction_idx) in visited:
+            if (next_row, next_col, cur_dir) in visited:
                 return True
             cur_row, cur_col = next_row, next_col
     return False
@@ -78,6 +77,8 @@ def part_2(file):
     cur_row, cur_col = start_row, start_col
     cur_direction_idx = 0
     visited = set()
+    answer = 0
+    tried_new_obstacle = set()
     while True:
         visited.add((cur_row, cur_col))
         next_row = cur_row + DIRS[cur_direction_idx][0]
@@ -87,14 +88,17 @@ def part_2(file):
         if problem_map[next_row][next_col] == '#':
             cur_direction_idx = (cur_direction_idx + 1) % len(DIRS)
         else:
+            # Place a new obstacle
+            if (next_row, next_col) not in tried_new_obstacle:
+                tried_new_obstacle.add((next_row, next_col))
+                problem_map[next_row][next_col] = '#'
+                if run_cycle(problem_map, cur_row,
+                             cur_col, (cur_direction_idx + 1) % len(DIRS),
+                             set(visited)):
+                    answer += 1
+                problem_map[next_row][next_col] = '.'
+            # Advance
             cur_row, cur_col = next_row, next_col
-
-    answer = 0
-    for row, col in visited:
-        problem_map[row][col] = '#'
-        if run_cycle(problem_map, start_row, start_col):
-            answer += 1
-        problem_map[row][col] = '.'
 
     print("ANSWER:", answer)
 
