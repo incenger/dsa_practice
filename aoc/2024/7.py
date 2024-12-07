@@ -1,7 +1,10 @@
 """
 time python3 7.py
-python3 7.py  26.50s user 0.65s system 97% cpu 27.931 total
+python3 7.py  4.07s user 0.17s system 91% cpu 4.628 total
 """
+
+import collections
+
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
 
@@ -20,45 +23,63 @@ def read_input(file):
 
 def part_1(file):
     equations = read_input(file)
+
+    NUM_OPS = 2
+
+    def check(test_value, numbers):
+        n = len(numbers)
+        queue = collections.deque([(numbers[0], 0)])
+        while queue:
+            value, idx = queue.popleft()
+            for op_idx in range(NUM_OPS):
+                if op_idx == 0:
+                    new_value = value + numbers[idx + 1]
+                else:
+                    new_value = value * numbers[idx + 1]
+
+                if new_value == test_value and idx == n - 2:
+                    return True
+
+                if new_value <= test_value and idx < n - 2:
+                    queue.append((new_value, idx + 1))
+        return False
+
     answer = 0
     for test_value, numbers in equations:
-        n = len(numbers)
-        for mask in range(2**(n - 1)):
-            value = numbers[0]
-            for i in range(n - 1):
-                if mask % 2 == 0:
-                    value *= numbers[i + 1]
-                else:
-                    value += numbers[i + 1]
-                mask //= 2
-                if value > test_value:
-                    break
-            if value == test_value:
-                answer += test_value
-                break
+        if check(test_value, numbers):
+            answer += test_value
     print("ANSWER:", answer)
 
 
 def part_2(file):
     equations = read_input(file)
+
+    NUM_OPS = 3
+
+    def check(test_value, numbers):
+        n = len(numbers)
+        queue = collections.deque([(numbers[0], 0)])
+        while queue:
+            value, idx = queue.popleft()
+            for op_idx in range(NUM_OPS):
+                if op_idx == 0:
+                    new_value = value + numbers[idx + 1]
+                elif op_idx == 1:
+                    new_value = value * numbers[idx + 1]
+                else:
+                    new_value = int(f"{value}{numbers[idx+1]}")
+
+                if new_value == test_value and idx == n - 2:
+                    return True
+
+                if new_value <= test_value and idx < n - 2:
+                    queue.append((new_value, idx + 1))
+        return False
+
     answer = 0
     for test_value, numbers in equations:
-        n = len(numbers)
-        for mask in range(3**(n - 1)):
-            value = numbers[0]
-            for i in range(n - 1):
-                if mask % 3 == 0:
-                    value *= numbers[i + 1]
-                elif mask % 3 == 1:
-                    value += numbers[i + 1]
-                else:
-                    value = int(f"{value}{numbers[i+1]}")
-                mask //= 3
-                if value > test_value:
-                    break
-            if value == test_value:
-                answer += test_value
-                break
+        if check(test_value, numbers):
+            answer += test_value
     print("ANSWER:", answer)
 
 
