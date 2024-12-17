@@ -1,8 +1,8 @@
 """
+ time python3 17.py
+python3 17.py  0.02s user 0.02s system 80% cpu 0.053 total
 """
-
-import threading
-import multiprocessing
+import collections
 
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
@@ -22,7 +22,7 @@ def get_combo_operand(state, operand):
 
 
 def adv(state, operand):
-    state['a'] = int(state['a'] / 2**get_combo_operand(state, operand))
+    state['a'] >>= get_combo_operand(state, operand)
     state['ins'] += 2
 
 
@@ -54,12 +54,12 @@ def out(state, operand):
 
 
 def bdv(state, operand):
-    state['b'] = int(state['a'] / 2**get_combo_operand(state, operand))
+    state['b'] = state['a'] >> get_combo_operand(state, operand)
     state['ins'] += 2
 
 
 def cdv(state, operand):
-    state['c'] = int(state['a'] / 2**get_combo_operand(state, operand))
+    state['c'] = state['a'] >> get_combo_operand(state, operand)
     state['ins'] += 2
 
 
@@ -97,40 +97,57 @@ def part_1(file):
 
 
 def part_2(file):
+    """
+    The program uses the jump instruction to make a loop, and ends with a == 0.
+    In each loop, a is shifted right by 3 bits.
+    Each output value is determined soley by the value of a.
+    We can do backward search to construct a (forward search won't work because we need the actual value of a).
+    """
     registers, program = read_input(file)
-    # Heuristic for the first value
-    # b = a % 8
-    # b ^= 6
-    # c = a // 2**b
-    # b ^= c
-    # b ^= 7
-    # a = a // 2**3
-    # out(b % 8) == 2
-    register_a = 1
-    while True:
+
+    def compute_output(a):
+        # b = a % 8
+        # b = b ^ 6
+        # c = a >> b
+        # b = b ^ c
+        # b = b ^ 7
+        # a = a >> 3
+        # out(b % 8)
+        b = (a % 8) ^ 6
+        c = a >> b
+        out = (b ^ c ^ 7) % 8
+        return out
+
+    # BFS search
+    # Because each value is determined by a and its last 3 bits
+    # We need to do backward search
+    answer = float('inf')
+    queue = collections.deque([(0, len(program) - 1)])
+
+    while queue:
+        current_a, idx = queue.popleft()
+        if idx == -1:
+            answer = min(current_a, answer)
+        else:
+            for a_last_3_bits in range(8):
+                next_a = (current_a << 3) + a_last_3_bits
+                if compute_output(next_a) == program[idx]:
+                    queue.append((next_a, idx - 1))
+
+    if answer != float('inf'):
         program_state = {'ins': 0, 'out': []}
         for name, val in zip("abc", registers):
             program_state[name] = val
-
-        program_state['a'] = register_a
+        program_state['a'] = answer
         while program_state['ins'] < len(program):
             opcode = program[program_state['ins']]
             operand = program[program_state['ins'] + 1]
             OPCODE_MAP[opcode](program_state, operand)
 
-            out_idx = len(program_state['out']) - 1
-            if out_idx >= 0 and program_state['out'][out_idx] != program[
-                    out_idx]:
-                break
-        if program_state['ins'] == len(
-                program) and program_state['out'] == program:
-            break
-        register_a += 1
-    print("ANSWER:", register_a)
+        if program_state['out'] == program:
+            print("ANSWER", answer)
 
 
 if __name__ == "__main__":
-    part_1(SAMPLE_FILE)
     part_1(INPUT_FILE)
-    # part_2(SAMPLE_FILE)
-    # part_2(INPUT_FILE)
+    part_2(INPUT_FILE)
