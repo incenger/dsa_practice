@@ -1,6 +1,6 @@
 """
-time python3 15.py
-python3 15.py  0.03s user 0.02s system 81% cpu 0.061 total
+time python3 16.py
+python3 16.py  0.12s user 0.03s system 66% cpu 0.224 total
 """
 import heapq
 import collections
