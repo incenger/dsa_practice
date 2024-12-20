@@ -1,4 +1,6 @@
 """
+time python3 20.py
+python3 20.py  10.22s user 0.17s system 98% cpu 10.572 total
 """
 import collections
 
@@ -70,11 +72,46 @@ def part_1(file):
 
 
 def part_2(file):
-    pass
+    racetrack = read_input(file)
+    M, N = len(racetrack), len(racetrack[0])
+    start, end = None, None
+    wall_to_try = []
+    spaces = []
+    for row in range(M):
+        for col in range(N):
+            if racetrack[row][col] == 'S':
+                start = (row, col)
+            if racetrack[row][col] == 'E':
+                end = (row, col)
+            if racetrack[row][col] != '#':
+                spaces.append((row, col))
+
+    dist = bfs(racetrack, start)
+
+    # Brute force for all possible starting and ending position of the cheat
+    PHASE_LIMIT = 20
+    save_count = collections.Counter()
+    for phase_start_row, phase_start_col in spaces:
+        for phase_end_row, phase_end_col in spaces:
+            orig_dist = dist[phase_end_row][phase_end_col] - dist[
+                phase_start_row][phase_start_col]
+            if orig_dist <= 0:
+                continue
+            direct_dist = abs(phase_end_row -
+                              phase_start_row) + abs(phase_start_col -
+                                                     phase_end_col)
+            if direct_dist <= PHASE_LIMIT:
+                save = (orig_dist - direct_dist)
+                save_count[save] += 1
+
+    for threshold in [50, 100]:
+        answer = sum(count for save, count in save_count.items()
+                     if save >= threshold)
+        print(f"ANSWER({threshold})", answer)
 
 
 if __name__ == "__main__":
     part_1(SAMPLE_FILE)
     part_1(INPUT_FILE)
-    # part_2(SAMPLE_FILE)
-    # part_2(INPUT_FILE)
+    part_2(SAMPLE_FILE)
+    part_2(INPUT_FILE)
