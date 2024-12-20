@@ -1,6 +1,6 @@
 """
 time python3 20.py
-python3 20.py  10.22s user 0.17s system 98% cpu 10.572 total
+python3 20.py  1.42s user 0.03s system 98% cpu 1.473 total
 """
 import collections
 
@@ -61,7 +61,7 @@ def part_1(file):
     dist_from_end = bfs(racetrack, end)
     orig_dist = dist_from_start[end[0]][end[1]]
 
-    save_count = collections.Counter()
+    save_count = collections.defaultdict(int)
 
     for wall_row, wall_col in wall_to_try:
         new_dist = dist_from_start[wall_row][wall_col] + dist_from_end[
@@ -88,11 +88,27 @@ def part_2(file):
 
     dist = bfs(racetrack, start)
 
-    # Brute force for all possible starting and ending position of the cheat
     PHASE_LIMIT = 20
-    save_count = collections.Counter()
+
+    def get_phase_end(start_row, start_col):
+        for drow in range(-PHASE_LIMIT, PHASE_LIMIT + 1):
+            max_dcol = PHASE_LIMIT - abs(drow)
+            end_row = start_row + drow
+            if end_row < 0 or end_row >= M:
+                continue
+            for dcol in range(-max_dcol, max_dcol + 1):
+                end_col = start_col + dcol
+                if end_col < 0 or end_col >= N:
+                    continue
+                if racetrack[end_row][end_col] != '#' \
+                    and dist[end_row][end_col] >= dist[start_row][start_col]:
+                    yield (end_row, end_col)
+
+    # Brute force for all possible starting and ending position of the cheat
+    save_count = collections.defaultdict(int)
     for phase_start_row, phase_start_col in spaces:
-        for phase_end_row, phase_end_col in spaces:
+        for phase_end_row, phase_end_col in get_phase_end(
+                phase_start_row, phase_start_col):
             orig_dist = dist[phase_end_row][phase_end_col] - dist[
                 phase_start_row][phase_start_col]
             if orig_dist <= 0:
