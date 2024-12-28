@@ -1,4 +1,6 @@
 """
+time python3 25.py
+python3 25.py  0.05s user 0.02s system 89% cpu 0.075 total
 """
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
@@ -52,11 +54,11 @@ def part_1(file):
 
 
 def part_2(file):
-    pass
+    print("50 stars")
 
 
 if __name__ == "__main__":
     part_1(SAMPLE_FILE)
     part_1(INPUT_FILE)
-    # part_2(SAMPLE_FILE)
-    # part_2(INPUT_FILE)
+    part_2(SAMPLE_FILE)
+    part_2(INPUT_FILE)
