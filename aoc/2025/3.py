@@ -15,27 +15,20 @@ def read_input(file):
 
 
 def max_joltage(bank, max_choice):
-
-    @functools.cache
-    def find_max(idx, remain_choice):
-        if remain_choice == 0:
-            return 0
-        if idx == len(bank):
-            return 0 if remain_choice == 0 else float('-inf')
-
-        exp = 10**(remain_choice - 1)
-        return max(bank[idx] * exp + find_max(idx + 1, remain_choice - 1),
-                   find_max(idx + 1, remain_choice))
-
-    return find_max(0, max_choice)
+    dp = [0] * (max_choice + 1)
+    for digit in bank:
+        new_dp = dp
+        for j in range(max_choice - 1, -1, -1):
+            new_dp[j + 1] = max(new_dp[j + 1], dp[j] * 10 + digit)
+        dp = new_dp
+    return dp[max_choice]
 
 
 def part_1(file):
     banks = read_input(file)
     answer = 0
     for bank in banks:
-        m = max_joltage(bank, max_choice=2)
-        answer += m
+        answer += max_joltage(bank, max_choice=2)
     print(f"Part 1: {answer}")
 
 
@@ -43,8 +36,7 @@ def part_2(file):
     banks = read_input(file)
     answer = 0
     for bank in banks:
-        m = max_joltage(bank, max_choice=12)
-        answer += m
+        answer += max_joltage(bank, max_choice=12)
     print(f"Part 2: {answer}")
 
 
