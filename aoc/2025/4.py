@@ -1,3 +1,5 @@
+import collections
+
 SAMPLE_FILE = "sample.txt"
 INPUT_FILE = "input.txt"
 
@@ -15,6 +17,8 @@ def read_input(file):
 
 def count_rolls(grid, row, col):
     M, N = len(grid), len(grid[0])
+    if grid[row][col] == '.':
+        return M * N + 1
     rolls = 0
     for dr, dc in DIRS:
         nrow = row + dr
@@ -40,24 +44,28 @@ def part_1(file):
 def part_2(file):
     grid = read_input(file)
     M, N = len(grid), len(grid[0])
-    answer = 0
-    loop_count = 0
+    rolls = [[0] * N for _ in range(M)]
+    queue = collections.deque()
 
-    while True:
-        remove = 0
-        for row in range(M):
-            for col in range(N):
-                if grid[row][col] == '.':
-                    continue
-                rolls = count_rolls(grid, row, col)
-                if rolls < ROLLS_LIMIT:
-                    remove += 1
-                    grid[row][col] = '.'
-        answer += remove
-        loop_count += 1
-        if remove == 0:
-            break
-    print(f"Part 2: Loop Count: {loop_count} | Answer: {answer}")
+    for row in range(M):
+        for col in range(N):
+            rolls[row][col] = count_rolls(grid, row, col)
+            if rolls[row][col] < ROLLS_LIMIT:
+                queue.append((row, col))
+
+    answer = 0
+    while queue:
+        answer += 1
+        row, col = queue.popleft()
+        grid[row][col] = '.'
+        for dr, dc in DIRS:
+            nrow = row + dr
+            ncol = col + dc
+            if 0 <= nrow < M and 0 <= ncol < N and grid[nrow][ncol] == '@':
+                if rolls[nrow][ncol] == ROLLS_LIMIT:
+                    queue.append((nrow, ncol))
+                rolls[nrow][ncol] -= 1
+    print(f"Part 2: {answer}")
 
 
 if __name__ == "__main__":
